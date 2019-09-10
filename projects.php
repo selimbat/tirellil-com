@@ -41,96 +41,14 @@
   <div class="container-fluid px-4">
     <div class="row">
       <div class="grid-wraper clearfix">
-        <div class="grid-box float-inline third with-margin personal">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/selim/project-thumbnails/bubble-beam.png" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">Ray tracing from scratch using Python</h5>
-              <p class="on-center text-center">numpy, python</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin photo motion">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/2.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin branding">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/9.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin motion">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/4.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin branding photo">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/5.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin photo">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/6.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin branding">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/7.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin motion">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/8.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-box float-inline third with-margin branding">
-          <a href="project-image.html">
-            <div class="portfolio-box-1 rounded">
-              <img  src="img/portfolio/grid/3.jpg" alt="" />
-              <div class="portfolio-mask-3 rounded"></div>
-              <h5 class="on-center text-center">serve people</h5>
-              <p class="on-center text-center">design, motion</p>
-            </div>
-          </a>
-        </div>
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/bubble-beam-thumbnail.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
+          <?php include(ROOT_DIR . '/projects/thumbnails/project-thumbnail-template.php'); ?>
       </div>
     </div>
   </div>

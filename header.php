@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,6 +24,7 @@
 
         <!-- CSS
         ================================================== -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/mind-icons-line.css"/>
@@ -78,22 +80,22 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavMenuMain">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.php" id="home-button">
+                                    <a class="nav-link" href="index.php" id="home-button">
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./about.php" id="about-button">
+                                    <a class="nav-link" href="about.php" id="about-button">
                                         About me
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./projects.php" id="projects-button">
+                                    <a class="nav-link" href="projects.php" id="projects-button">
                                         Projects
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./contact.php" id="contacts-button">
+                                    <a class="nav-link" href="contact.php" id="contacts-button">
                                         Contact
                                     </a>
                                 </li>
@@ -104,13 +106,3 @@
             </div>
         </div>
     </div>
-<!--
-    <header style="background-color: #262636">
-            <div class="container" style="padding: 40px">
-                <h1 style="color: #D7EBBA"><strong>Selim Tirellil</strong></h1>
-                <div class="separator">
-                </div>
-                <h4 style="color: #D7EBBA">Master's degree at CentraleSupélec. Gameplay and online developer at Féérik Games</h4>
-            </div>
-        </header>
--->
