@@ -2,13 +2,13 @@
 ================================================== -->
 
 <div class="section background-palette-gray over-hide footer-1 dark">
-    <div class="container scd-foot pt-5 pb-5" style="padding: 0px !important;">
+    <div class="container scd-foot pt-4 pb-4" style="padding: 0px !important;">
         <div class="row justify-content-center pt-5 pb-5">
             <div class="col-md-12 text-center pb-0">
                 <ul class="list-style display-inline-b mb-0 pb-2">
                     <li><a href="./about.php">About Me</a></li>
                     <li><a href="./projects.php">My Projects</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="./resume.php">My Resume</a></li>
                 </ul>
             </div>
             <div class="col-md-12 text-center">
@@ -29,7 +29,7 @@
     <div class="container scd-foot pt-4 pb-4">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p class="mb-0">© 2018 Funky. Powerd with <i class="fa fa-heart"></i> by <a href="https://themeforest.net/user/ig_design/portfolio?ref=IG_design" target="_blank">IG Design</a>!</p>
+                <p class="mb-0"></p>
             </div>
         </div>
     </div>

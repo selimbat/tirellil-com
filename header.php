@@ -24,7 +24,7 @@
 
         <!-- CSS
         ================================================== -->
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/mind-icons-line.css"/>
@@ -53,7 +53,7 @@
                 <div class="col-md-7">
                     <p><i class="fa fa-phone ml-2 mr-1"></i> +33 6 73 10 22 68
                         <i class="fa fa-comment-o ml-2 mr-1"></i> selim.tirellil@student.ecp.fr
-                        <i class="fa fa-map-pin ml-2 mr-1"></i> Montpellier, France</p>
+                        <i class="fa fa-map-pin ml-2 mr-1"></i> Paris, France</p>
                 </div>
                 <div class="col-md-5">
                     <ul class="nav-top-social">
@@ -95,8 +95,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.php" id="contacts-button">
-                                        Contact
+                                    <a class="nav-link" href="resume.php" id="contacts-button">
+                                        Resume
                                     </a>
                                 </li>
                             </ul>

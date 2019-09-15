@@ -3,7 +3,7 @@
 <!-- Hero Block
 ================================================== -->
 
-<div class="section padding-top-1st padding-bottom-1st over-hide" style="height: 69vh">
+<div class="section padding-top-1st padding-bottom-1st over-hide" style="height: 71vh">
     <div class="parallax" style="background-image: url('./img/selim/cgi-laser-balls.jpg')"></div>
     <div class="light-fade-over-2"></div>
     <div class="container z-bigger">

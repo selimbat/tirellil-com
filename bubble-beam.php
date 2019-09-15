@@ -22,20 +22,40 @@
 <!-- Block
 ================================================== -->
 
-<div class="section padding-top-bottom background-white z-bigger-2">
+<div class="section padding-top-small padding-bottom-small background-white z-bigger-2">
     <div class="container">
+        <div class="row justify-content-center">
+            <a class="col-md-4" href="https://github.com/selimbat/bubble_beam" target="_blank">
+                <img src="img/logos/d9.png">
+            </a>
+        </div>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="services-box-2 text-left" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                    <h6 class="mt-4">Design Process</h6>
+                    <h6 class="mt-4">Project description</h6>
                     <p class="mt-3">
-                        Lorem ipsum dolor <strong>sit amet</strong>, consectetur adipiscing <strong>selit</strong>,
-                        sed do eiusmod <strong>tempor incididunt</strong> ut labore et dolore magna <strong>aliqua</strong>.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        I started this project some years ago, when I didn't even know what I was really doing and without
+                        any idea about what I was going to end up with. In april 2019, I decided to dust the whole thing and
+                        started over. And that's how I ended up having this little rendering program that only uses basic Python
+                        libraries and the magic of linear algebra.
+                    </p>
+                    <p class="mt-3">
+                        The idea is to defines some basic objects like cameras, rays, lights, scenes and scene objects and implement
+                        functions to determine where should a ray intersect an object and how should it reflect (I didn't
+                        handle the case of refraction here). For my case, I only implemented this for spheres but the same
+                        can be done for other simple solids. I then used the <a target="_blank" href="https://en.wikipedia.org/wiki/Phong_shading">
+                        Phong shading</a> to build up the final image pixel by pixel
+                    </p>
+                    <h6 class="mt-4">Future enhancements</h6>
+                    <p class="mt-3">
+                        This small rendering pipeline, even fully functional, has a major flaw : its processing time per image!
+                        The amount of calculus necessary to render even one pixel does a lot heavy operations like vector
+                        normalization and the whole thing is done on the CPU (lol) since I didn't know how to use my GPU at the
+                        time. Two ways of optimizing the process could parallelizing, using the GPU and lighten the normalization
+                        operation by using an <a target="_blank" href="https://en.wikipedia.org/wiki/Fast_inverse_square_root">approximation
+                        of the inverse square root</a>.
+                    </p>
                     </p>
                 </div>
             </div>
@@ -61,38 +81,19 @@
 <!-- Block
 ================================================== -->
 
-<div class="section padding-top-bottom background-white z-bigger-2">
+<div class="section padding-bottom-big padding-top-small background-white z-bigger-2">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h5>Additional informations<br>about project:</h5>
-                <ul class="list-style mt-4 pl-3">
-                    <li><i class="fa fa-user-circle"></i><p class="d-inline-block mb-2">Client: Envato</p></li>
-                    <li><i class="fa fa-code"></i><p class="d-inline-block mb-2">Services: Web design, Photo</p></li>
-                    <li><i class="fa fa-link"></i><p class="d-inline-block mb-2">Website: www.themeforest.net</p></li>
-                    <li><i class="fa fa-envelope-open-o"></i><p class="d-inline-block mb-2">Email: info@funky.com</p></li>
-                    <li><i class="fa fa-phone"></i><p class="d-inline-block mb-2">Phone: +1 325 832 3623</p></li>
-                    <li><i class="fa fa-mobile-phone"></i><p class="d-inline-block mb-2">Mobile: +1 23 424 4742</p></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
-                <img src="img/portfolio/project-1/1-1.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
-                <img src="img/portfolio/project-1/1-2.jpg" alt="" class="img-fluid">
+        <div class="row justify-content-start padding-bottom-smaller">
+            <div class="col-md-4">
+                <h5>Some results :</h5>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- Block
-================================================== -->
-
-<div class="section padding-bottom background-white z-bigger-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="img/portfolio/project-1/1-3.jpg" alt="" class="img-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <img src="img/selim/projects/first%20reflection.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <img src="img/selim/projects/thee%20spheres%20reflection.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
@@ -106,8 +107,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="project-nav-wrap">
-                    <a href="#"><div class="left-nav" data-scroll-reveal="enter left move 60px over 0.7s after 0.1s">old<div class="text-on-hover">older project</div></div></a>
-                    <a href="#"><div class="right-nav" data-scroll-reveal="enter right move 60px over 0.7s after 0.1s">new<div class="text-on-hover">new project</div></div></a>
+                    <a href="./wolpAIre.php"><div class="left-nav" data-scroll-reveal="enter left move 60px over 0.7s after 0.1s">old<div class="text-on-hover">older project</div></div></a>
+                    <a href="./feerik-internship.php"><div class="right-nav" data-scroll-reveal="enter right move 60px over 0.7s after 0.1s">new<div class="text-on-hover">new project</div></div></a>
                 </div>
             </div>
         </div>

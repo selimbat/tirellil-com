@@ -11,7 +11,7 @@
             <div class="col-md-7 parallax-fade-top">
                 <div class="main-title on-dark text-center" style="margin-bottom: 0;">
                     <h2>get in touch</h2>
-                    <div class="main-subtitle-bottom mt-3" style="color: white">Let's talk about <strong>your</strong> project</div>
+                    <div class="main-subtitle-bottom mt-3" style="color: white">Tell me about <strong>your</strong> project</div>
                 </div>
             </div>
             <div class="clear"></div>
@@ -20,7 +20,7 @@
 </div>
 
 <!-- Block
-================================================== -->
+==================================================
 
 <div class="section background-white padding-top-bottom-small over-hide z-bigger-2">
     <div class="container">
@@ -55,6 +55,22 @@
             <div class="clear"></div>
             <div class="col-md-12 mt-5 text-center">
                 <button class="btn btn-primary btn-round btn-long" type="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<div class="section over-hide">
+    <div class="container pt-5 pb-2">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 on-center">
+                <a href="doc/selim-tirellil-resume.pdf" target="_blank">
+                    <div class="mb-4">
+                        <button class="btn btn-primary btn-simple btn-round btn-block" type="button">Download my resume</button>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
