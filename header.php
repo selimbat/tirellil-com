@@ -63,6 +63,9 @@
                         <li class="linkedin">
                             <a href="https://www.linkedin.com/in/selim-tirellil/" target="_blank">LinkedIn</a>
                         </li>
+                        <li class="google">
+                            <a href="https://www.shadertoy.com/user/Atchafalaya" target="_blank">Shadertoy</a>
+                        </li>
                     </ul>
                 </div>
             </div>
