@@ -41,9 +41,14 @@
   <div class="container-fluid px-4">
     <div class="row">
       <div class="grid-wraper clearfix">
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/mux104.php'); ?>
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/mux205.php'); ?>
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/3d-engine-thumbnail.php'); ?>
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/gmtk-game-jam-thumbnail.php'); ?>
           <?php include_once(ROOT_DIR . '/projects/thumbnails/feerik-internship-thumbnail.php'); ?>
           <?php include_once(ROOT_DIR . '/projects/thumbnails/bubble-beam-thumbnail.php'); ?>
           <?php include_once(ROOT_DIR . '/projects/thumbnails/wolpAIre-thumbnail.php'); ?>
+          <?php include_once(ROOT_DIR . '/projects/thumbnails/hungrog-games-thumbnail.php'); ?>
       </div>
     </div>
   </div>

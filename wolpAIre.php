@@ -150,7 +150,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="project-nav-wrap">
-                    <a href="#" style="pointer-events: none; display: inline-block;"><div class="left-nav" data-scroll-reveal="enter left move 60px over 0.7s after 0.1s">old<div class="text-on-hover">older project</div></div></a>
+                    <a href="./hungrog-games.php" ><div class="left-nav" data-scroll-reveal="enter left move 60px over 0.7s after 0.1s">old<div class="text-on-hover">older project</div></div></a>
                     <a href="./bubble-beam.php"><div class="right-nav" data-scroll-reveal="enter right move 60px over 0.7s after 0.1s">new<div class="text-on-hover">new project</div></div></a>
                 </div>
             </div>
