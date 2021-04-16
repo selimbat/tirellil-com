@@ -1,5 +1,4 @@
-# tirellil-com
-The code base for my portfolio website at www.tirellil.com
+# tirellil-com-v2
 
 ## Project setup
 ```
@@ -23,4 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
