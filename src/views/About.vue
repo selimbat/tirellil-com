@@ -1,5 +1,22 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Banner>
+      <h2>About</h2>
+      <p>This is an about page</p>
+    </Banner>
   </div>
 </template>
+
+<script>
+import Banner from "@/components/Banner.vue";
+
+export default {
+  name: "About",
+  components: {
+    Banner,
+  },
+};
+</script>
+
+<style scoped>
+</style>
