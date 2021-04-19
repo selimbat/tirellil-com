@@ -5,27 +5,3 @@
   --width-xs: 540px;
 }
 
-.container{
-  width: 100%;
-}
-
-@media screen and (min-width: 576px) {
-  .container{
-    width:var(--width-xs);
-  }
-}
-@media screen and (min-width: 768px) {
-  .container{
-    width:var(--width-s);
-  }
-}
-@media screen and (min-width: 992px) {
-    .container{
-      width:var(--width-m);
-    }
-  }
-@media screen and (min-width: 1200px) {
-  .container{
-    width:var(--width-l);
-  }
-}
