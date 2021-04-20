@@ -75,15 +75,6 @@ export default {
 
 .header-top {
   padding: 0 10px 15px 10px;
-  ul > li {
-    display: inline;
-  }
-  ul + ul {
-    margin-left: auto;
-  }
-  ul > li + li::before {
-    content: " | ";
-  }
 }
 
 .header-bottom {
@@ -104,25 +95,25 @@ export default {
 }
 
 .socials {
-  a::before {
-    background-color: green;
-    content: ".";
-    position: absolute;
-    height: 5px;
-    margin: -25px 0 0 -9px;
-    border-radius: 50%;
-    width: 5px;
-    top: 50%;
-  }
-  .github > a::before {
-    background-color: black;
-  }
-  .linked-in > a::before {
-    background-color: blue;
-  }
-  .shadertoy > a::before {
-    background-color: orange;
-  }
+  list-style: disc inside none;
+  margin-left: auto;
+  margin-right: -13px;
+  display: flex;
+}
+
+.socials a {
+  text-decoration: none;
+  margin: 0 13px 0 -13px;
+}
+
+.github::marker {
+  background-color: black;
+}
+.linked-in::marker {
+  background-color: blue;
+}
+.shadertoy::marker {
+  background-color: orange;
 }
 
 .socials > .github {

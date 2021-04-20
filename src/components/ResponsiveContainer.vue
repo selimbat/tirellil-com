@@ -17,7 +17,6 @@ export default {
     maxWidth: function () {
       let container = this.$refs.container;
       container.style.width = this.maxWidth + "px";
-      console.log(container.children);
     },
   },
   methods: {
