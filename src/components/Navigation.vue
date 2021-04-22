@@ -2,8 +2,14 @@
   <Header>
     <div slot="header-top" class="header-top">
       <ul class="infos">
-        <li class="email">selim@tirellil.com</li>
-        <li class="location">Paris, France</li>
+        <li class="email">
+          <Icon icon="envelope" />
+          selim@tirellil.com
+        </li>
+        <li class="location">
+          <Icon icon="map-marker-alt" />
+          Paris, France
+        </li>
       </ul>
       <ul class="socials">
         <li class="github"><a href="#">Github</a></li>
@@ -126,5 +132,18 @@ export default {
 
 .socials > .shadertoy {
   color: orange;
+}
+
+.infos {
+  display: flex;
+}
+
+.infos > li + li {
+  margin-left: 15px;
+}
+
+.email > svg,
+.location > svg {
+  color: var(--primary-color);
 }
 </style>
