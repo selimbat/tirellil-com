@@ -4,14 +4,7 @@
       <h2>I'm a software engineer</h2>
     </Banner>
     <ResponsiveContainer>
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/img-about.jpg" />
     </ResponsiveContainer>
   </div>
 </template>
