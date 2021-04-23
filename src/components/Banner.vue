@@ -26,12 +26,20 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  width: 90vw;
-  height: 70vh;
+  width: 100%;
+  height: 520px;
   margin: auto;
-  background: yellow;
+  background-image: url("../assets/cgi-laser-balls.jpg");
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.75;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.parallax * {
+  color: lightgrey;
+  mix-blend-mode: screen;
 }
 </style>

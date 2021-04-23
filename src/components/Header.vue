@@ -1,5 +1,5 @@
 <template>
-  <ResponsiveContainer style="position: fixed">
+  <ResponsiveContainer style="position: fixed; z-index: 10">
     <header>
       <slot name="header-top"></slot>
       <span></span>
