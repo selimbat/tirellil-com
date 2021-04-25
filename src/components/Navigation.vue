@@ -1,5 +1,5 @@
 <template>
-  <Header>
+  <Header class="header">
     <div slot="header-top" class="header-top">
       <ul class="infos">
         <li class="email">
@@ -72,19 +72,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header-top,
-.header-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+.header {
+  z-index: 1;
 
-.header-top {
-  padding: 0 10px 15px 10px;
-}
+  &-top,
+  &-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-.header-bottom {
-  padding: 15px 10px 0 10px;
+  &-top {
+    padding: 0 10px 15px 10px;
+  }
+
+  &-bottom {
+    padding: 15px 10px 0 10px;
+  }
+
   div:nth-of-type(1) {
     margin-right: auto;
   }
