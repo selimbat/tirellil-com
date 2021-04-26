@@ -1,0 +1,23 @@
+{
+  "title": "A simple placeholder",
+  "filterTags": [
+    "personal",
+    "school"
+  ],
+  "techTags": [
+    "C#",
+    "Shaders"
+  ],
+  "index": 0,
+  "route": "#",
+  "thumbnail": {
+    "imgSrc": "3d-engine.png",
+    "imgAlt": "A Utah teapot"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48"
+}
