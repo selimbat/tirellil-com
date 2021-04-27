@@ -4,19 +4,19 @@
       <h2>My projects</h2>
       <p>You can browse through all my recent projects</p>
     </Banner>
-    <Thumbnail> </Thumbnail>
+    <ProjectsGrid> </ProjectsGrid>
   </div>
 </template>
 
 <script>
 import Banner from "@/components/Banner.vue";
-import Thumbnail from "@/components/Thumbnail.vue";
+import ProjectsGrid from "@/components/ProjectsGrid.vue";
 
 export default {
   name: "Projects",
   components: {
     Banner,
-    Thumbnail,
+    ProjectsGrid,
   },
 };
 </script>

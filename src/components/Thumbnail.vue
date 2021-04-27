@@ -22,7 +22,7 @@ export default {
   props: {
     metadata: {
       type: Object,
-      //required: true,
+      required: true,
       default: function () {
         return {
           route: "#",
@@ -51,7 +51,6 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  max-width: 400px;
   aspect-ratio: 16/9;
   justify-content: center;
   align-items: center;
