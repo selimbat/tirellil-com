@@ -1,21 +1,23 @@
 <template>
-  <div class="flex-container">
+  <ResponsiveContainer class="flex-container">
     <Thumbnail
       v-for="project in projects"
       :key="project.title"
       :metadata="getThumbnailMetadata(project)"
     >
     </Thumbnail>
-  </div>
+  </ResponsiveContainer>
 </template>
 
 <script>
 import Thumbnail from "@/components/Thumbnail.vue";
+import ResponsiveContainer from "@/components/ResponsiveContainer.vue";
 
 export default {
   name: "ProjectsGrid",
   components: {
     Thumbnail,
+    ResponsiveContainer,
   },
   data() {
     return {
