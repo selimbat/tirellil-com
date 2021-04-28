@@ -23,15 +23,6 @@ export default {
     metadata: {
       type: Object,
       required: true,
-      default: function () {
-        return {
-          route: "#",
-          imgSrc: "3d-engine.png",
-          imgAlt: "A Utah teapot",
-          techTags: ["C++, OpenGL"],
-          title: "A dummy project",
-        };
-      },
     },
   },
   computed: {
