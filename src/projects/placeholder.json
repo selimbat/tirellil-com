@@ -33,8 +33,8 @@
     {
       "type": "image",
       "content": {
-        "imgSrc": "3d-engine.png",
-        "imgAlt": "A Utah teapot",
+        "imgSrc": "dodeca1.png",
+        "imgAlt": "Dodecahedra",
         "annotation": "This is a possible result"
       }
     },
@@ -54,8 +54,8 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "3d-engine.png",
-            "imgAlt": "A Utah teapot",
+            "imgSrc": "dodeca1.png",
+            "imgAlt": "Dodecahedra",
             "annotation": "This is a possible result"
           }
         }
@@ -64,7 +64,7 @@
     {
       "type": "paragraph",
       "title": "Conclusion",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto quibusdam reprehenderit perferendis."
     }
   ]
 }

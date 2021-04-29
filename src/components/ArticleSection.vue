@@ -76,7 +76,11 @@ export default {
   },
   methods: {
     imgUrl: function (path) {
-      return images("./" + path);
+      if (images.keys().indexOf("./" + path) >= 0) {
+        return images("./" + path);
+      } else {
+        return images("./dodeca1.png"); // TODO: change to a real error image
+      }
     },
   },
 };
