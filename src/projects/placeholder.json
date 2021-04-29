@@ -39,6 +39,29 @@
       }
     },
     {
+      "type": "multiple",
+      "sections": [
+        {
+          "type": "p",
+          "title": "A nested section",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto quibusdam reprehenderit perferendis, quam iure itaque!"
+        },
+        {
+          "type": "p",
+          "title": "Another nested section",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto quibusdam reprehenderit perferendis, quam iure itaque!"
+        },
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "3d-engine.png",
+            "imgAlt": "A Utah teapot",
+            "annotation": "This is a possible result"
+          }
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "title": "Conclusion",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
