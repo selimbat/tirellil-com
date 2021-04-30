@@ -104,4 +104,21 @@ export default {
 .sub-sections-container {
   display: flex;
 }
+
+.sub-sections-container > * {
+  width: 100%;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container > img {
+  max-width: 100%;
+}
+
+.img-annotation {
+  font-style: italic;
+}
 </style>
