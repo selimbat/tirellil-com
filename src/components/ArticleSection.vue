@@ -2,7 +2,7 @@
   <section>
     <div class="article-section" v-if="!isNestingTooDeep">
       <h5 v-if="hasTitle">{{ section.title }}</h5>
-      <p v-if="isParagraph">{{ section.content }}</p>
+      <p v-if="isParagraph" v-html="beautifyText(section.content)"></p>
       <div class="img-container" v-if="isImage">
         <img
           :src="imgUrl(section.content.imgSrc)"
@@ -81,6 +81,21 @@ export default {
       } else {
         return images("./dodeca1.png"); // TODO: change to a real error image
       }
+    },
+    beautifyText: function (text) {
+      const boldSymbol = "**";
+      let boldOpeningIndex = text.indexOf(boldSymbol);
+      if (boldOpeningIndex < 0) {
+        return text;
+      }
+      let boldClosingIndex = text.indexOf(boldSymbol, boldOpeningIndex + 2);
+      if (boldClosingIndex < 0) {
+        return text.replace(boldSymbol, "");
+      }
+      let treated = text
+        .replace(boldSymbol, "<strong>")
+        .replace(boldSymbol, "</strong>");
+      return this.beautifyText(treated);
     },
   },
 };
