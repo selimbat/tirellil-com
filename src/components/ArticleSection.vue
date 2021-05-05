@@ -96,7 +96,7 @@ export default {
       const boldSymbol = "**";
       const boldTags = { opening: "<strong>", closing: "</strong>" };
       const linkSymbol = "~~";
-      const linkTags = { opening: (url) => `<a href="${url}">`, closing: "</a>"};
+      const linkTags = { opening: (url) => `<a target="_blank" href="${url}">`, closing: "</a>"};
 
       let boldIndex = { opening: text.indexOf(boldSymbol), closing: -1 };
       let linkIndex = { opening: text.indexOf(linkSymbol), closing: -1 };
