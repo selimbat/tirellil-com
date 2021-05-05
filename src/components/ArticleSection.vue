@@ -10,8 +10,12 @@
         />
         <p class="img-annotation">{{ section.content.annotation }}</p>
       </div>
-      <div class="video-container" v-if="isVideo">
-        <iframe :src="section.video.src" allowfullscreen=""></iframe>
+      <div class="video-wrapper">
+        <div class="video-container" v-if="isVideo">
+          <div class="video">
+            <iframe :src="section.video.src" allowfullscreen=""></iframe>
+          </div>
+        </div>
       </div>
       <div class="sub-sections-container" v-if="isMultiple">
         <ArticleSection
@@ -177,6 +181,28 @@ export default {
 
 .img-annotation {
   font-style: italic;
+}
+
+.video-wrapper {
+  display:flex;
+  justify-content: center;
+}
+
+.video-container {
+  flex-basis: 700px;
+}
+
+.video {
+  position:relative;
+  padding-top: calc(100% / (16 / 9));
+}
+
+.video > iframe {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
 }
 
 .error {

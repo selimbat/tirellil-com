@@ -42,7 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  aspect-ratio: 16/9;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -52,17 +51,16 @@ export default {
 
 .thumbnail {
   width: 100%;
-  height: 100%;
   display: inline-block;
   position: relative;
+  padding-top: calc(100% / (16 / 9));
 }
 
 img {
   position: absolute;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 .textArea {
