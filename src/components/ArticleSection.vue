@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="article-section" v-else>
-      <span class="depth-error">
+      <span class="error">
         Section nesting is too deep ({{ depth }}).
       </span>
     </div>
@@ -111,7 +111,7 @@ export default {
         }
         if ((boldIndex.opening - linkIndex.opening) * (boldIndex.closing - linkIndex.opening) * (boldIndex.opening - linkIndex.closing) * (boldIndex.closing - linkIndex.closing) < 0){
           // tags intersect. Not supported
-          return "<span style=\"color: red\">Error when formatting text. Bold and link tags intersect.</span>"
+          return "<span style=\"error\">Error when formatting text. Bold and link tags intersect.</span>"
         }
         
         if (boldIndex.closing > 0 && (linkIndex.closing < 0 || boldIndex.closing < linkIndex.closing)) {
@@ -177,5 +177,9 @@ export default {
 
 .img-annotation {
   font-style: italic;
+}
+
+.error {
+  color: red;
 }
 </style>
