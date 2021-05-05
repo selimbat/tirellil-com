@@ -10,6 +10,9 @@
         />
         <p class="img-annotation">{{ section.content.annotation }}</p>
       </div>
+      <div class="video-container" v-if="isVideo">
+        <iframe :src="section.video.src" allowfullscreen=""></iframe>
+      </div>
       <div class="sub-sections-container" v-if="isMultiple">
         <ArticleSection
           v-for="(subSection, index) in section.sections"
@@ -59,6 +62,13 @@ export default {
         this.section &&
         this.section.type &&
         (this.section.type === "image" || this.section.type === "img")
+      );
+    },
+    isVideo: function () {
+      return (
+        this.section &&
+        this.section.type &&
+        this.section.type === "video"
       );
     },
     isMultiple: function () {
@@ -113,9 +123,9 @@ export default {
           let urlStart = text.indexOf("[", linkIndex.opening + linkSymbol.length);
           let urlEnd = -1;
           let url = "#";
-          if (urlStart >= 0){
+          if (urlStart >= 0 && urlStart < linkIndex.closing) {
             urlEnd = text.indexOf("]", urlStart);
-            if (urlEnd >= 0){
+            if (urlEnd >= 0 && urlEnd < linkIndex.closing) {
               url = text.substring(urlStart + 1, urlEnd);
               text = text.replace(`[${url}]`, "");
             }
