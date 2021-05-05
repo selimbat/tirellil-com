@@ -1,0 +1,51 @@
+{
+  "title": "2D co-op game",
+  "filterTags": [
+    "personal",
+    "school"
+  ],
+  "techTags": [
+    "Unity",
+    "C#"
+  ],
+  "index": 10,
+  "route": "/projects/mux205",
+  "thumbnail": {
+    "imgSrc": "mux205.png",
+    "imgAlt": "Screenshot of a 2D multiplayer game"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Context",
+      "content": "During the first year after my graduation, I enrolled in some online courses at the ~~CNAM intitute[https://www.cnam.fr]~~. This project is my final submission for the video games programming course."
+    },
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "For this project, the inspiration came from ~~a video made by Brackeys[https://www.youtube.com/watch?v=VRpBWBkHvjU]~~ and led to this co-operative platform puzzle. The main mechanic of this game is that some platforms, crucial to finishing the level, change color once one of the players touches them and become useless for the other player. So you have to plan ahead before jumping around and have to restart the whole level from the beginning."
+    },
+    {
+      "type": "paragraph",
+      "content": "In this project, I wanted to insist on the introduction of the game mechanics as well as the increasing difficulty curve with game design which evolves progressively to offer bigger challenges by exploring different uses of mechanics."
+    },
+    {
+      "type": "paragraph",
+      "content": "It is possible to play alone by moving the characters one by one but it is recommended to play with a friend since the whole point of the game is to exceed the conflicts and communicate and coordinate with your partner."
+    },
+    {
+      "type": "video",
+      "video":{
+        "src":"https://www.youtube.com/embed/6AYr8-CUHJU",
+        "alt":"A demo of the game"
+      }
+    }
+
+  ]
+}
