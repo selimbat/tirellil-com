@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/Contact.vue')
   },
   {
-    path: '/projects/:title',
+    path: '/projects/:filename',
     name: 'Project',
     component: () => import('../views/Project.vue'),
     props: true,

@@ -1,10 +1,10 @@
 <template>
   <div class="project">
     <Banner>
-      <h2>{{ title }}</h2>
+      <h2>{{ isProjectLoaded ? project.title : filename }}</h2>
       <p>{{ tagsStr }}</p>
     </Banner>
-    <Article v-if="isProjectLoaded" :sections="project.sections"></Article>
+    <Article v-if="isProjectLoaded" :sections="project.sections" :repository="project.repository"></Article>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import Article from "@/components/Article.vue";
 export default {
   name: "Projects",
   props: {
-    title: {
+    filename: {
       type: String,
       required: true,
     },
@@ -43,7 +43,7 @@ export default {
   },
   created() {
     const projects = require.context("@/projects", false, /\.json$/);
-    this.project = projects(`./${this.title}.json`);
+    this.project = projects(`./${this.filename}.json`);
   },
 };
 </script>
