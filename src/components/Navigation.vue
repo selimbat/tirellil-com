@@ -12,9 +12,11 @@
         </li>
       </ul>
       <ul class="socials">
-        <li class="github"><a href="#">Github</a></li>
-        <li class="linked-in"><a href="#">LinkedIn</a></li>
-        <li class="shadertoy"><a href="#">Shadertoy</a></li>
+        <li v-for="social in socials" :key="social.name" :class="social.class">
+          <a :href="social.url">
+            {{ social.name }}
+          </a>
+        </li>
       </ul>
     </div>
     <div slot="header-bottom" class="header-bottom">
@@ -45,6 +47,12 @@ export default {
   components: {
     NavButton,
     Header,
+  },
+  props: {
+    socials: {
+      type: Array,
+      required: true
+    }
   },
   data() {
     return {
