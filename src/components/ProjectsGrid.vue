@@ -29,6 +29,7 @@ export default {
     projects.keys().forEach((project) => {
       this.projects.push(projects(project));
     });
+    this.projects = this.projects.sort((p1, p2) => p1.index < p2.index);
   },
   methods: {
     getThumbnailMetadata: function (project) {
