@@ -70,6 +70,7 @@ export default {
 }
 
 article {
+  padding: 0 8%;
   margin-bottom: 3em;
 }
 
