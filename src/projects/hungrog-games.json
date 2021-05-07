@@ -1,0 +1,38 @@
+{
+  "title": "Roguelite multiplayer game",
+  "filterTags": ["school"],
+  "techTags": ["Unity", "OOP"],
+  "index": 3,
+  "route": "/projects/hungrog-games",
+  "thumbnail": {
+    "imgSrc": "hungrog-games.png",
+    "imgAlt": "A wizard battles a blob monster in dungeon"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "For an advanced object-oriented programming course, I suggested to our professor to do a video game project. Upon his agreement, I went to some other students to form a **team of three**. As the main restriction was that the project had to include some network aspect, we decided to go for a multiplayer roguelite game."
+    },
+    {
+      "type": "paragraph",
+      "title": "Game concept",
+      "content": "The game starts with the different players, up to a maximum of four, spawning at different locations in a procedurally generated dungeon. Then, players have to rush throught the dungeon to defeat enemies and gather the most upgrades they can to defeat other players when they encounter them. Each dungeon room holds an upgrade protected by a monster. The upgrade is only available when the monster who protects it dies."
+    },
+    {
+      "type": "paragraph",
+      "title": "What I have worked on",
+      "content": "We devided the tasks depending on everyone's preferences. As was interested in the algorithmic aspect of the game, I volunteered to do the procedural generation of the dungeon."
+    },
+    {
+      "type": "paragraph",
+      "content": "The level is made of rooms of different sizes and lays on a 5x5 square grid where each tile can be the center of a room. The algorithm starts with the room at the center of the level and runs a random walk on each of the four directions and creates a room at each tile it walks on until it reaches the side of the grid."
+    },
+    {
+      "type": "paragraph",
+      "content": "This part done and working, I helped with some polish for the UI and created a sound manager to add some audio elements to the game."
+    }
+  ]
+}

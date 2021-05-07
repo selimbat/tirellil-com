@@ -1,0 +1,34 @@
+{
+  "title": "GMTK Game Jam 2019 submission",
+  "filterTags": ["personal"],
+  "techTags": ["Unity", "C#"],
+  "index": 7,
+  "route": "/projects/gmtk-2019",
+  "thumbnail": {
+    "imgSrc": "gmtk-2019.png",
+    "imgAlt": "Four robots in a console factory in front of a furnace"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/jamsforfun/GMTK-2019"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "For the 2019 edition of the Game Maker's Tool Kit game jam, some friends and I decided to participate. We gathered as **a team of seven** at a friend's house with all the supplies we needed for the **48 hours** that we were to go throught. As the theme \"Only one\" was announces, we went on throwing our ideas and discussing them until we ended with the concept of PlusBox-Cooked."
+    },
+    {
+      "type": "paragraph",
+      "title": "Game concept",
+      "content": "PlusBox-Cooked is a high-energy co-op game for 4 players that takes place in a futuristic robot-world. You and your fellow robots work in a factory where you are trying to manufacture as many gaming consoles as possible before the end of your shift. But here is the catch. Each player is assigned to only one button and others use that button to interact with them. Bring your friends and controllers and try to make those robots succeed in their job!"
+    },
+    {
+      "type": "paragraph",
+      "title": "What I have worked on",
+      "content": "For this project, I tackled the core game mechanic which is picking up objects and transfering them to other players."
+    }
+  ]
+}

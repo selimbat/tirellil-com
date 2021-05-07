@@ -1,0 +1,70 @@
+{
+  "title": "Ray marching voxel engine",
+  "filterTags": ["personal", "school"],
+  "techTags": ["Processing", "GLSL", "Computer Graphics"],
+  "index": 9,
+  "route": "/projects/mux104",
+  "thumbnail": {
+    "imgSrc": "mux104.png",
+    "imgAlt": "A structure made with many rhombic dodecahedra of different colors"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat/r_dodeca_vox_builder"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Context",
+      "content": "During the first year after my graduation, I enrolled in some online courses at ~~the CNAM intitute[https://www.cnam.fr/]~~. This project is my final submission for the \"Image synthesis and virtual reality\" course."
+    },
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "This project is an implementation of a **ray-marching algorithm**. It revolves around the fact that ~~the rhombic dodecahedron[https://en.wikipedia.org/wiki/Rhombic_dodecahedron]~~ can tessalate the Euclidean space. The elementary brick of this engine, the voxel, thus takes the shape of a rhombic dodecahedron and can be placed at integer coordinates on a grid of the same shape."
+    },
+    {
+      "type": "paragraph",
+      "content": "In this project, the entire scene is rendered on a rectangle of the size of the window and to which we attach a ~~fragment shader[https://fr.wikipedia.org/wiki/Shader#Fragment_shaders_ou_Pixel_shaders]~~ that will take care of calculating the color of each pixel according to the ray-marching algorithm."
+    },
+    {
+      "type": "paragraph",
+      "content": "For a given pixel and once all the data is linked to the shader, the algorithm simulates a ray starting at the position of the camera and oriented in the direction of the pixel to be rendered and runs through the scene in several iterations. At each iteration, it computes the distance scene and progresses along the ray by that distance according to the ray direction. When the distance becomes smaller than a certain threshold, it means that the ray found a surface of the scene. It then calculates the output color of the given pixel."
+    },
+    {
+      "type": "paragraph",
+      "content": "Given a function that returns, for a point in space, the distance to the scene, this algorithms is able to output a complex rendering of the scene. Furthermore, by differentiating the distance function, it can access the gradient, i.e. the normal, at each point in space, wich is very useful in shading and ligthing calculations."
+    },
+    {
+      "type": "paragraph",
+      "title": "Limits and possible enhancements",
+      "content": "A limitation of this algorithm compared to its cousins that rely on stochastic methods such as path tracing is that it simulates only certain rays of light and therefore misses on effects such as light bouncing off surfaces, global illumination or caustics caused by transparent matter."
+    },
+    {
+      "type": "paragraph",
+      "content": "To impove this engine, it would be possible to add reflections, transparency in materials, a real skybox to highlight the reflection, a more fluid camera movement as well as a better user interaction for adding and removing voxels."
+    },
+    {
+      "type": "multiple",
+      "title": "Some structures",
+      "sections": [
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "dodeca1.png",
+            "imgAlt": "A small structure with rhombic dodecahedra"
+          }
+        },
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "dodeca2.png",
+            "imgAlt": "A huge structure with rhombic dodecahedra"
+          }
+        }
+      ]
+    }
+  ]
+}

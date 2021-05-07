@@ -1,0 +1,24 @@
+{
+  "title": "3D rendering engine",
+  "filterTags": ["personal"],
+  "techTags": ["C++", "OpenGL"],
+  "index": 8,
+  "route": "/projects/3d-engine",
+  "thumbnail": {
+    "imgSrc": "3d-engine.png",
+    "imgAlt": "A Utah teapot"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat/openglAdventure"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": " Driven by mere curiosity about low-level 3D engines, I decided to start a side project to learn how to build an engine from scratch using graphic libraries such as OpenGL. Guided by online tutorials, I started with basic primitive plotting and went on implementing more and more complex concepts such as texture and model importing, shader programming, lights and shadow mapping."
+    }
+  ]
+}

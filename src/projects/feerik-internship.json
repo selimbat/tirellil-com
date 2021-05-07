@@ -1,0 +1,32 @@
+{
+  "title": "Gameplay and Online programming at Féérik Games",
+  "filterTags": ["personal"],
+  "techTags": ["Unity", "C#", "Photon"],
+  "index": 6,
+  "route": "/projects/feerik-internship",
+  "thumbnail": {
+    "imgSrc": "feerik.png",
+    "imgAlt": "The logo of Féérik Games"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "Final year internship as a **Gameplay and Online programmer** in the independent studio ~~Féérik Games[http://www.feerik.com/]~~ to design and develop a multiplayer game in an environment providing a high level of autonomy and responsibility."
+    },
+    {
+      "type": "paragraph",
+      "content": "- Design and development of the core architecture of the project."
+    },
+    {
+      "type": "paragraph",
+      "content": "- Implementation of the gameplay, gameloop and network aspects of the game using Unity Engine and C#."
+    },
+    {
+      "type": "paragraph",
+      "content": "- Bringing a proactive attitude regarding the design and user experience of the game."
+    }
+  ]
+}

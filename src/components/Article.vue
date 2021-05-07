@@ -69,4 +69,8 @@ export default {
   transition: box-shadow 0.1s linear;
 }
 
+article {
+  margin-bottom: 3em;
+}
+
 </style>

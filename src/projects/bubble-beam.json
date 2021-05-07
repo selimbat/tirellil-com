@@ -1,0 +1,55 @@
+{
+  "title": "Ray tracing from scratch",
+  "filterTags": ["personal"],
+  "techTags": ["Python", "Computer Graphics"],
+  "index": 5,
+  "route": "/projects/bubble-beam",
+  "thumbnail": {
+    "imgSrc": "bubble-beam.png",
+    "imgAlt": "Three spheres lit by point lights of different colors and intensities"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat/bubble_beam"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "I started this project some years ago, when I didn't even know what I was really doing and without any idea about what I was going to end up with. In april 2019, I decided to dust the whole thing and started over. And that's how I ended up having this little rendering program that only uses basic Python libraries and the magic of linear algebra."
+    },
+    {
+      "type": "paragraph",
+      "content": "The idea is to defines some basic objects like cameras, rays, lights, scenes and scene objects and implement functions to determine where should a ray intersect an object and how should it reflect (I didn't handle the case of refraction here). For my case, I only implemented this for spheres but the same can be done for other simple solids. I then used the ~~Phong shading model[https://en.wikipedia.org/wiki/Phong_shading]~~ to build up the final image pixel by pixel."
+    },
+    {
+      "type": "paragraph",
+      "title": "Future enhancements",
+      "content": "This small rendering pipeline, even fully functional, has a major flaw : its processing time per image! The amount of calculus necessary to render even one pixel does a lot heavy operations like vector normalization and the whole thing is done on the CPU since I didn't know how to use my GPU at the time. Two ways of optimizing the process could parallelizing, using the GPU and lighten the normalization operation by using an ~~approximation of the inverse square root[https://en.wikipedia.org/wiki/Fast_inverse_square_root]~~."
+    },
+    {
+      "type": "multiple",
+      "title": "Some results",
+      "sections": [
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "first reflection.png",
+            "imgAlt": "A big blue sphere and a smaller red one that reflects on the surface of the former.",
+            "annotation": "First scene with reflections and shadows"
+          }
+        },
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "three spheres reflection.png",
+            "imgAlt": "Three spheres of different colors and roughness lit by several lights",
+            "annotation": "Multiple point lights, different materials and several levels of reflection."
+          }
+        }
+      ]
+    }
+  ]
+}

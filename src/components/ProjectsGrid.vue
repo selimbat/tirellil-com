@@ -51,6 +51,6 @@ export default {
 }
 
 .flex-container > * {
-  flex: 1 1 400px;
+  flex: 1 1 350px;
 }
 </style>

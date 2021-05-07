@@ -1,0 +1,83 @@
+{
+  "title": "WolpAIre, an AI for a turn-based strategy game",
+  "filterTags": ["personal", "school"],
+  "techTags": ["Artificial Intelligence"],
+  "index": 4,
+  "route": "/projects/wolpAIre",
+  "thumbnail": {
+    "imgSrc": "wolpAIre.jpg",
+    "imgAlt": "A vampire and a werewolf roar at each other"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/wolvampire/wolpAIre"
+  },
+  "originallyPosted": "2021-04-26 19:48",
+  "lastUpdated": "2021-04-26 19:48",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Project description",
+      "content": "This project took place during my AI course at CentraleSupélec in **a team of five**. We had to come up with an **AI that plays a turn based strategy game** designed by our professor and implement a communication system to exchange information with the professor's server that hosted the game. The conditions were **to consider the enemy's possible future moves**, ideally using ~~the alpha-beta pruning[https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning]~~, and computing and giving an answer to the server within **2 seconds each turn**. This time limit was really challenging and it oriented our AI design a lot. A tournament took place for the final test and students confronted their AIs for the title of Almighty AI."
+    },
+    {
+      "type": "paragraph",
+      "title": "Game rules",
+      "content": "The game opposes werewolves to vampires. **The winner is the last specie alive**. The board is a grid of **any possible size** and a tile can carry **any number of creatures** as long as they are of the same species. Each player can move **as many of their creatures as they want** on as **many** of the 8 adjacent tiles as they like (diagonally, vertically and horizontally). At the beginning of the game, some tiles carry human units that can be **converted** if attacked by player units. Without going in the details, he output of a confrontation between the two players or a player and a human tile is decided randomly by the server, with the greater victory chance for the more numerous creature."
+    },
+    {
+      "type": "paragraph",
+      "title": "Our approach",
+      "content": "We started by playing the game ourselves to gain better knowledge about its rules and quickly implemented a **greedy** algorithm and a **local game server** with all the rules to try our little AIs. Our first goal was to try and do better than the greedy algorithm, which turned out to be not that simple. We knew that going with the classic ~~minimax algorithm[https://en.wikipedia.org/wiki/Minimax]~~ wouldn't be a great idea because of the huge number of possible movements of each player (9 to the power n for each allied tile of n units). We had to narrow down these possibilities and started thinking in terms of possible paths and targets instead of possible movements."
+    },
+    {
+      "type": "paragraph",
+      "content": "From that idea, we experimented with different approaches within my group so, for the sake of brevity, I will only expose ~~the one I most contributed to[https://github.com/wolvampire/wolpAIre/blob/master/oracle.py]~~. In that approach, each node of the tree of possibilities represented a scenario as follow (A for allies, E for enemies and H for humans):"
+    },
+    {
+      "type": "paragraph",
+      "content": "- A4 targets H2 with 4 units"
+    },
+    {
+      "type": "paragraph",
+      "content": "- A5 targets E1 with 5 units"
+    },
+    {
+      "type": "paragraph",
+      "content": "- E1 targets E4 with 1 units"
+    },
+    {
+      "type": "paragraph",
+      "content": "- E4 targets H3 with 4 units"
+    },
+    {
+      "type": "paragraph",
+      "content": "The algorithm then simulates all the movements until there is a confrontation between units. It resolves the confrontation with a simplistic non-random model that we decide (for example, if allies greater then enemies then win) and continues recursively until one of the players wins."
+    },
+    {
+      "type": "paragraph",
+      "content": "This approach gave pretty good results after trying several heuristics and bug fixing. The down side though was that it took way longer than 2 seconds to find out the best move to do. So to counter that, we run some hundreds of games on our local server with different board sizes, different numbers of human tiles and different maximum depths for our algorithm. With these collected data, **we could dynamically set the maximum depth for our algorithm** no matter what situation we were in to stay below the time limit of 2 seconds per turn. This turned out to be quite helpful since the professor gave us the worst possible scenarios to stress-test our little fragile AIs."
+    },
+    {
+      "type": "paragraph",
+      "content": "Finally, if there are no human tiles left on the board, we adopt the simple strategy of gathering all of our troops and attacking the enemy starting by their weakest tile."
+    },
+    {
+      "type": "multiple",
+      "sections": [
+        {
+          "type": "paragraph",
+          "title": "The AI in action during the tournament:",
+          "content": "Here we can see the two players starting at on each side of a symmetrical board for even chances. This board shows some of the traps that the AI must avoid. For example, the 9 human tiles close to their starting positions could kill them if they fight it without enough units."
+        },
+        {
+          "type": "video",
+          "video": {
+            "src": "https://www.youtube.com/embed/gBLgrns4PuM",
+            "alt": "A match opposing our AI to another team during the tournament"
+          }
+        }
+      ]
+    }
+  ]
+}
