@@ -12,7 +12,8 @@ export default {
   methods: {
     parallax() {
       let slot = document.getElementsByClassName("parallax")[0];
-      slot.style.transform = `translateY(${0.7 * window.pageYOffset}px)`;
+      slot.style.transform = `translateY(${Math.min(0.7 * window.pageYOffset, 230)}px)`;
+      slot.style.opacity = 1 - 0.003 * window.pageYOffset;
     },
   },
   created() {
