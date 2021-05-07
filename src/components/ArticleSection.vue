@@ -108,9 +108,11 @@ export default {
       let ctr = 0;
       while (boldIndex.opening >= 0 || linkIndex.opening >= 0) {
         if (boldIndex.opening >= 0) {
+          boldIndex.opening = text.indexOf(boldSymbol);
           boldIndex.closing = text.indexOf(boldSymbol, boldIndex.opening + boldSymbol.length);
         }
         if (linkIndex.opening >= 0) {
+          linkIndex.opening = text.indexOf(linkSymbol);
           linkIndex.closing = text.indexOf(linkSymbol, linkIndex.opening + linkSymbol.length);
         }
         if ((boldIndex.opening - linkIndex.opening) * (boldIndex.closing - linkIndex.opening) * (boldIndex.opening - linkIndex.closing) * (boldIndex.closing - linkIndex.closing) < 0){
