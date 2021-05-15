@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="parallax">
+    <div ref="parallax" class="parallax">
       <slot> </slot>
     </div>
   </section>
@@ -11,7 +11,7 @@ export default {
   name: "Banner",
   methods: {
     parallax() {
-      let slot = document.getElementsByClassName("parallax")[0];
+      let slot = this.$refs.parallax;
       slot.style.transform = `translateY(${Math.min(0.7 * window.pageYOffset, 230)}px)`;
       slot.style.opacity = 1 - 0.003 * window.pageYOffset;
     },

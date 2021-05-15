@@ -1,6 +1,6 @@
 {
   "title": "Roguelite multiplayer game",
-  "filterTags": ["school"],
+  "filterTags": ["game", "ai"],
   "techTags": ["Unity", "OOP"],
   "index": 3,
   "route": "/projects/hungrog-games",
