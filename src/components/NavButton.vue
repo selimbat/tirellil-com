@@ -1,26 +1,25 @@
 <template>
-  <router-link :to="route">{{ label }}</router-link>
+  <router-link class="nav-button" :to="route">{{ label }}</router-link>
 </template>
 
 <script>
-export default {
-  name: "NavButton",
-  props: {
-    label: {
-      type: String,
-      required: true,
+  export default {
+    name: "NavButton",
+    props: {
+      label: {
+        type: String,
+        required: true,
+      },
+      route: {
+        type: String,
+        required: true,
+      },
     },
-    route: {
-      type: String,
-      required: true,
-    },
-  },
-};
+  };
 </script>
 
 <style scoped>
-a + a::before {
-  content: "|";
-  padding-inline: 1rem;
-}
+  .nav-button + .nav-button {
+    margin-top: 1em;
+  }
 </style>
