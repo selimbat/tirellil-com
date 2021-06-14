@@ -144,7 +144,11 @@
 
   .socials a {
     text-decoration: none;
-    margin: 0 13px 0 -13px;
+    margin-left: -0.25rem;
+  }
+
+  .socials > li:not(:first-of-type) {
+    padding-left: 1rem;
   }
 
   @mixin social-link($color) {
