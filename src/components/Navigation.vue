@@ -138,7 +138,6 @@
   .socials {
     list-style: disc inside none;
     margin-left: auto;
-    margin-right: -13px;
     display: flex;
   }
 
