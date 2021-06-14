@@ -147,26 +147,35 @@
     margin: 0 13px 0 -13px;
   }
 
-  .github::marker {
-    background-color: black;
-  }
-  .linked-in::marker {
-    background-color: blue;
-  }
-  .shadertoy::marker {
-    background-color: orange;
+  @mixin social-link($color) {
+    a {
+      transition: all 0.2s ease-in;
+      color: white;
+    }
+    &::marker {
+      color: $color;
+    }
+    &:hover {
+      a {
+        color: $color;
+      }
+    }
   }
 
   .socials > .github {
-    color: black;
+    @include social-link(black);
   }
 
   .socials > .linked-in {
-    color: blue;
+    @include social-link(rgb(0, 68, 255));
   }
 
   .socials > .shadertoy {
-    color: orange;
+    @include social-link(rgb(236, 175, 6));
+  }
+
+  .socials > .codepen {
+    @include social-link(rgb(0, 25, 165));
   }
 
   .infos {
