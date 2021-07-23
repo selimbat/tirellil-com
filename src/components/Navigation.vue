@@ -1,5 +1,9 @@
 <template>
-  <Header class="header" @toggle-mobile-view="toggleMobileView">
+  <Header
+    class="header"
+    :class="{ 'not-mobile': !mobileView }"
+    @toggle-mobile-view="toggleMobileView"
+  >
     <div slot="header-top" class="header-top">
       <ul class="infos">
         <li class="email">
@@ -105,6 +109,10 @@
   .header {
     z-index: 1;
 
+    &.not-mobile {
+      padding-top: 2rem;
+    }
+
     &-top,
     &-bottom {
       display: flex;
@@ -113,6 +121,7 @@
     }
 
     &-top {
+      font-size: 0.85rem;
       padding: 0 10px 15px 10px;
     }
 
@@ -127,10 +136,22 @@
       margin: 0;
     }
     nav > a {
-      font-weight: bold;
-      color: #2c3e50;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+      border-radius: 0.125rem;
+      transition: background-color 0.3s ease-in;
+      &:visited {
+        color: var(--header-text-color);
+      }
       &.router-link-exact-active {
         color: #42b983;
+      }
+      &:not(:first-of-type) {
+        margin-left: 0.25rem;
+      }
+      &:hover {
+        background-color: rgba(226, 226, 226, 0.5);
       }
     }
   }
@@ -153,7 +174,7 @@
   @mixin social-link($color) {
     a {
       transition: all 0.2s ease-in;
-      color: white;
+      color: var(--header-text-color);
     }
     &::marker {
       color: $color;
@@ -192,6 +213,16 @@
   .email > svg,
   .location > svg {
     color: var(--accent-color);
+  }
+
+  .title,
+  .infos,
+  .nav {
+    color: var(--header-text-color);
+  }
+
+  .title {
+    font-size: 2rem;
   }
 
   .header-mobile {

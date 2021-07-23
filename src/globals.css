@@ -1,12 +1,13 @@
-:root{
+:root {
   --width-l: 1140px;
   --width-m: 960px;
   --width-s: 720px;
   --width-xs: 540px;
 
   --accent-color: #42b983;
+  --header-text-color: #fff;
 }
 
-strong{
+strong {
   font-weight: bold;
 }
