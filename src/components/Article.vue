@@ -14,18 +14,21 @@
         :mobileView="mobileView"
       ></ArticleSection>
     </article>
+    <NextPrevNav :nextRoute="nextArticleRoute" :prevRoute="prevArticleRoute" />
   </ResponsiveContainer>
 </template>
 
 <script>
   import ArticleSection from "@/components/ArticleSection.vue";
   import ResponsiveContainer from "@/components/ResponsiveContainer.vue";
+  import NextPrevNav from "@/components/NextPrevNav.vue";
 
   export default {
     name: "Article",
     components: {
       ArticleSection,
       ResponsiveContainer,
+      NextPrevNav,
     },
     props: {
       sections: {
@@ -34,6 +37,12 @@
       },
       repository: {
         type: Object,
+      },
+      nextArticleRoute: {
+        type: String,
+      },
+      prevArticleRoute: {
+        type: String,
       },
     },
     data() {
