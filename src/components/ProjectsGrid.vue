@@ -56,7 +56,7 @@
       },
       registerFilter(filters) {
         let activeFilter = filters.find((f) => f.value);
-        this.activeFilter = activeFilter.label;
+        this.activeFilter = activeFilter?.label;
       },
       shouldShowProject(project) {
         if (this.activeFilter) {
