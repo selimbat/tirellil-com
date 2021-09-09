@@ -2,7 +2,6 @@
   <ResponsiveContainer
     :style="!mobileView ? 'position: fixed' : ''"
     @toggle-mobile-view="toggleMobileView"
-    :isHeader="true"
   >
     <header>
       <slot name="header-top" v-if="!mobileView"></slot>

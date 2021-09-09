@@ -1,18 +1,14 @@
 <template>
-  <div ref="container" class="container">
-    <slot></slot>
+  <div class="container-wrapper">
+    <div ref="container" class="container">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     name: "ResponsiveContainer",
-    props: {
-      isHeader: {
-        type: Boolean,
-        default: false,
-      },
-    },
     data() {
       return {
         maxWidth: 1140, // pixels
@@ -60,6 +56,10 @@
 </script>
 
 <style lang="scss" scoped>
+  .container-wrapper {
+    width: 100%;
+    transition: all 0.3s ease-out;
+  }
   .container {
     width: 1140px;
     margin-right: auto;

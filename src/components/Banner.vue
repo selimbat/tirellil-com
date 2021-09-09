@@ -7,40 +7,43 @@
 </template>
 
 <script>
-export default {
-  name: "Banner",
-  methods: {
-    parallax() {
-      let slot = this.$refs.parallax;
-      slot.style.transform = `translateY(${Math.min(0.7 * window.pageYOffset, 230)}px)`;
-      slot.style.opacity = 1 - 0.003 * window.pageYOffset;
+  export default {
+    name: "Banner",
+    methods: {
+      parallax() {
+        let slot = this.$refs.parallax;
+        slot.style.transform = `translateY(${Math.min(
+          0.7 * window.pageYOffset,
+          230
+        )}px)`;
+        slot.style.opacity = 1 - 0.003 * window.pageYOffset;
+      },
     },
-  },
-  created() {
-    window.addEventListener("scroll", this.parallax);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.parallax);
-  },
-};
+    created() {
+      window.addEventListener("scroll", this.parallax);
+    },
+    beforeDestroy() {
+      window.removeEventListener("scroll", this.parallax);
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-section {
-  width: 100%;
-  height: 520px;
-  margin: auto;
-  background-image: url("../assets/cgi-laser-balls.jpg");
-  background-size: cover;
-  background-position: top center;
-  opacity: 0.75;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  section {
+    width: 100%;
+    height: 520px;
+    margin: auto;
+    background-image: url("../assets/cgi-laser-balls.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.parallax * {
-  color: lightgrey;
-  mix-blend-mode: screen;
-}
+  .parallax * {
+    color: lightgrey;
+    mix-blend-mode: screen;
+  }
 </style>

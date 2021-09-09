@@ -1,7 +1,7 @@
 <template>
   <Header
     class="header"
-    :class="{ 'not-mobile': !mobileView }"
+    :class="{ 'not-mobile': !mobileView, scrolled: scrolled }"
     @toggle-mobile-view="toggleMobileView"
   >
     <div slot="header-top" class="header-top">
@@ -92,6 +92,7 @@
         ],
         mobileView: false,
         isMobileNavOpen: false,
+        scrolled: false,
       };
     },
     methods: {
@@ -101,6 +102,15 @@
       toggleNav(value) {
         this.isMobileNavOpen = value;
       },
+      updateScrollStyle() {
+        this.scrolled = window.pageYOffset > 0.55 * window.innerHeight;
+      },
+    },
+    created() {
+      window.addEventListener("scroll", this.updateScrollStyle);
+    },
+    beforeDestroy() {
+      window.removeEventListener("scroll", this.updateScrollStyle);
     },
   };
 </script>
@@ -110,7 +120,11 @@
     z-index: 1;
 
     &.not-mobile {
-      padding-top: 2rem;
+      padding: 2rem 0 1rem 0;
+    }
+
+    &.scrolled {
+      background-color: var(--header-dark-color);
     }
 
     &-top,
@@ -226,7 +240,7 @@
   }
 
   .header-mobile {
-    background-color: #000;
+    background-color: var(--header-dark-color);
     padding: 1em 1.5em 1em 1.5em;
     margin-left: 0;
     margin-right: 0;
