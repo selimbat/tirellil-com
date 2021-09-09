@@ -3,24 +3,18 @@
     <Banner>
       <h2>I'm a software engineer</h2>
     </Banner>
-    <ResponsiveContainer>
-      <img alt="placeholder" src="../assets/img-about.jpg" />
-    </ResponsiveContainer>
   </div>
 </template>
 
 <script>
-import Banner from "@/components/Banner.vue";
-import ResponsiveContainer from "@/components/ResponsiveContainer.vue";
+  import Banner from "@/components/Banner.vue";
 
-export default {
-  name: "Home",
-  components: {
-    Banner,
-    ResponsiveContainer,
-  },
-};
+  export default {
+    name: "Home",
+    components: {
+      Banner,
+    },
+  };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

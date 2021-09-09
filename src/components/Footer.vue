@@ -14,51 +14,51 @@
 </template>
 
 <script>
-export default {
-  name: "Footer",
-  props: {
-    socials: {
-      type: Array,
-      required: true
-    }
-  }
-}
+  export default {
+    name: "Footer",
+    props: {
+      socials: {
+        type: Array,
+        required: true,
+      },
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-.socials-wrapper {
-  background-color:#333;
-  padding: 2em 0;
-}
+  .socials-wrapper {
+    background-color: #333;
+    padding: 1em 0;
+  }
 
-.sub-footer {
-  height: 60px;
-  background-color:#000;
-}
+  .sub-footer {
+    height: 2.5vh;
+    background-color: #000;
+  }
 
-.socials > li {
-  margin: 1em 0 1em 0;
-  a {
-    position:relative;
-    &::after{
-      position:absolute;
-      content:'';
-      height:3px;
-      top:100%;
-      left:0;
-      width:0;
-      transition: all 0.3s ease-out;
-      background-color: var(--accent-color);
+  .socials > li {
+    margin: 1em 0 1em 0;
+    a {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        top: 100%;
+        left: 0;
+        width: 0;
+        transition: all 0.3s ease-out;
+        background-color: var(--accent-color);
+      }
+    }
+    a:hover::after {
+      width: 100%;
+      left: 0;
     }
   }
-  a:hover::after {
-    width: 100%;
-    left:0;
-  }
-}
 
-a {
-  text-decoration: none;
-  color:#eff;
-}
+  a {
+    text-decoration: none;
+    color: #eff;
+  }
 </style>
