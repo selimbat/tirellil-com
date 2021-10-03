@@ -31,7 +31,7 @@
 <style lang="scss" scoped>
   section {
     width: 100%;
-    height: 520px;
+    height: calc(100vh - var(--footer-height));
     margin: auto;
     background-image: url("../assets/cgi-laser-balls.jpg");
     background-size: cover;

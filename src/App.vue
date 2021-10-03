@@ -45,16 +45,6 @@
         ],
       };
     },
-    watch: {
-      $route(to) {
-        console.log(to);
-        if (!to.meta.verticalScroll) {
-          document.querySelector("body").style.overflowY = "hidden";
-        } else {
-          document.querySelector("body").style.overflowY = "visible";
-        }
-      },
-    },
   };
 </script>
 
