@@ -1,7 +1,7 @@
 <template>
   <ResponsiveContainer>
     <ProjectsFilters @filters-updated="registerFilter" />
-    <div class="flex-container">
+    <div class="flex-container bottom-space">
       <div
         v-for="project in projects"
         :key="project.title"
@@ -81,5 +81,9 @@
 
   .flex-container > .filtered {
     flex: 1 1 350px;
+  }
+
+  .bottom-space {
+    margin-bottom: 4em;
   }
 </style>
