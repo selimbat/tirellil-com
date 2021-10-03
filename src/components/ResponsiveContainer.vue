@@ -7,6 +7,25 @@
 </template>
 
 <script>
+  const windowSizes = [
+    {
+      threshold: 1200,
+      width: 1140,
+    },
+    {
+      threshold: 992,
+      width: 960,
+    },
+    {
+      threshold: 768,
+      width: 720,
+    },
+    {
+      threshold: 576,
+      width: 540,
+    },
+  ];
+
   export default {
     name: "ResponsiveContainer",
     data() {
@@ -31,15 +50,16 @@
     },
     methods: {
       adjustWidth() {
-        // FIXME there must be a better way
-        if (window.innerWidth > 1200) {
-          this.maxWidth = 1140;
-        } else if (window.innerWidth > 992) {
-          this.maxWidth = 960;
-        } else if (window.innerWidth > 768) {
-          this.maxWidth = 720;
-        } else if (window.innerWidth > 576) {
-          this.maxWidth = 540;
+        let size;
+        for (let i = 0; i < windowSizes.length; i++) {
+          if (window.innerWidth > windowSizes[i].threshold) {
+            if (!size || size.threshold < windowSizes[i].threshold) {
+              size = windowSizes[i];
+            }
+          }
+        }
+        if (size) {
+          this.maxWidth = size.width;
         } else {
           this.maxWidth = window.innerWidth - 30;
         }
