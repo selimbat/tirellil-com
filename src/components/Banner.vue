@@ -22,6 +22,9 @@
     created() {
       window.addEventListener("scroll", this.parallax);
     },
+    mounted() {
+      this.parallax();
+    },
     beforeDestroy() {
       window.removeEventListener("scroll", this.parallax);
     },
