@@ -15,7 +15,14 @@
     methods: {
       toggle() {
         this.isOpen = !this.isOpen;
+      },
+    },
+    watch: {
+      isOpen() {
         this.$emit("on-menu-toggle", this.isOpen);
+      },
+      $route() {
+        this.isOpen = false;
       },
     },
   };
