@@ -45,8 +45,15 @@
     align-items: center;
   }
 
-  .parallax * {
-    color: lightgrey;
-    mix-blend-mode: screen;
+  .parallax {
+    font-size: 20px;
+    * {
+      color: lightgrey;
+      mix-blend-mode: screen;
+    }
+    h2 {
+      font-size: 2em;
+      padding-bottom: 0.5em;
+    }
   }
 </style>
