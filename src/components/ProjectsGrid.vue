@@ -1,11 +1,14 @@
 <template>
-  <ResponsiveContainer>
+  <ResponsiveContainer @screen-changed="screenChanged">
     <ProjectsFilters @filters-updated="registerFilter" />
     <div class="flex-container bottom-space">
       <div
         v-for="project in projects"
         :key="project.title"
-        :class="{ filtered: shouldShowProject(project) }"
+        :class="[
+          nbProjectsPerRowClass,
+          shouldShowProject(project) ? 'filtered' : '',
+        ]"
         class="thumbnail-wrapper"
       >
         <Thumbnail
@@ -34,7 +37,13 @@
       return {
         projects: [],
         activeFilter: null,
+        nbProjectsPerRow: 3,
       };
+    },
+    computed: {
+      nbProjectsPerRowClass() {
+        return `row-${this.nbProjectsPerRow}`;
+      },
     },
     created() {
       const projects = require.context("@/projects", false, /\.json$/);
@@ -69,6 +78,20 @@
           return true;
         }
       },
+      screenChanged(screen) {
+        switch (screen) {
+          case "lg":
+            this.nbProjectsPerRow = 3;
+            break;
+          case "md":
+          case "sm":
+            this.nbProjectsPerRow = 2;
+            break;
+          case "xs":
+            this.nbProjectsPerRow = 1;
+            break;
+        }
+      },
     },
   };
 </script>
@@ -77,10 +100,18 @@
   .flex-container {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .flex-container > .filtered {
-    flex: 1 1 350px;
+    & > .filtered {
+      flex-shrink: 1;
+      &.row-1 {
+        flex-basis: 100%;
+      }
+      &.row-2 {
+        flex-basis: 50%;
+      }
+      &.row-3 {
+        flex-basis: 33.33%;
+      }
+    }
   }
 
   .bottom-space {

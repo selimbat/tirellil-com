@@ -11,18 +11,26 @@
     {
       threshold: 1200,
       width: 1140,
+      screenType: "lg",
+      mobileView: false,
     },
     {
       threshold: 992,
       width: 960,
+      screenType: "md",
+      mobileView: false,
     },
     {
       threshold: 768,
       width: 720,
+      screenType: "sm",
+      mobileView: true,
     },
     {
       threshold: 576,
       width: 540,
+      screenType: "xs",
+      mobileView: true,
     },
   ];
 
@@ -30,22 +38,22 @@
     name: "ResponsiveContainer",
     data() {
       return {
-        maxWidth: 1140, // pixels
-        mobileView: false,
+        windowSize: Math.max.apply(
+          Math,
+          windowSizes.map((s) => s.threshold)
+        ),
       };
     },
     watch: {
-      maxWidth: function() {
+      windowSize: function() {
         let container = this.$refs.container;
-        this.mobileView = this.maxWidth <= 720;
-        if (this.mobileView) {
-          container.style.width = "100vw";
+        if (this.windowSize.mobileView) {
+          container.style.width = "100%";
         } else {
-          container.style.width = this.maxWidth + "px";
+          container.style.width = this.windowSize.width + "px";
         }
-      },
-      mobileView: function() {
-        this.$emit("toggle-mobile-view", this.mobileView);
+        this.$emit("toggle-mobile-view", this.windowSize.mobileView);
+        this.$emit(`screen-changed`, this.windowSize.screenType);
       },
     },
     methods: {
@@ -58,7 +66,14 @@
             }
           }
         }
-        this.maxWidth = size ? size.width : window.innerWidth - 30;
+        this.windowSize = size
+          ? size
+          : {
+              threshold: window.innerWidth,
+              width: window.innerWidth - 30,
+              screenType: "xs",
+              mobileView: true,
+            };
       },
     },
     created() {
