@@ -1,16 +1,24 @@
 <template>
   <nav class="next-prev">
-    <router-link :to="nextRoute ? nextRoute : ''" class="next">
+    <router-link
+      :to="nextRoute ? nextRoute : ''"
+      class="next"
+      :class="{ disabled: nextRoute == null }"
+    >
       newer
-      <div class="on-hover">
+      <div class="on-hover" v-if="nextRoute != null">
         <Icon icon="angle-left" />
         <span>next project</span>
       </div>
     </router-link>
     <span class="oblique-sep"></span>
-    <router-link :to="prevRoute ? prevRoute : ''" class="prev">
+    <router-link
+      :to="prevRoute ? prevRoute : ''"
+      class="prev"
+      :class="{ disabled: prevRoute == null }"
+    >
       older
-      <div class="on-hover">
+      <div class="on-hover" v-if="prevRoute != null">
         <span>previous project</span>
         <Icon icon="angle-right" />
       </div>
@@ -43,6 +51,9 @@
     margin-left: auto;
     margin-bottom: 3em;
     display: inline-block;
+    & > .disabled {
+      cursor: default;
+    }
   }
   .next,
   .prev {
@@ -64,7 +75,7 @@
         color: var(--accent-color);
       }
     }
-    &:hover {
+    &:hover:not(.disabled) {
       color: #000;
       .on-hover {
         opacity: 1;

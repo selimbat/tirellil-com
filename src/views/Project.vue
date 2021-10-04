@@ -67,14 +67,14 @@
         );
         if (projectIndex >= 0) {
           this.project = orderedProjects[projectIndex].json;
-          if (projectIndex - 1 >= 0) {
-            this.prevProjectRoute =
-              orderedProjects[projectIndex - 1].json.route;
-          }
-          if (projectIndex + 1 < orderedProjects.length) {
-            this.nextProjectRoute =
-              orderedProjects[projectIndex + 1].json.route;
-          }
+          this.prevProjectRoute =
+            projectIndex - 1 >= 0
+              ? orderedProjects[projectIndex - 1].json.route
+              : null;
+          this.nextProjectRoute =
+            projectIndex + 1 < orderedProjects.length
+              ? orderedProjects[projectIndex + 1].json.route
+              : null;
         } else {
           this.project = projects(`./${filename}.json`);
         }
