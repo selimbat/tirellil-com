@@ -249,7 +249,6 @@
     .nav-mobile {
       top: 100%;
       width: 94%;
-      background-color: #000;
       flex: 0 0 100%;
       overflow: hidden;
       max-height: 0;
