@@ -58,11 +58,7 @@
             }
           }
         }
-        if (size) {
-          this.maxWidth = size.width;
-        } else {
-          this.maxWidth = window.innerWidth - 30;
-        }
+        this.maxWidth = size ? size.width : window.innerWidth - 30;
       },
     },
     created() {
