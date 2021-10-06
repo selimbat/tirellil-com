@@ -247,6 +247,7 @@
     margin-right: 0;
     position: relative;
     flex-wrap: wrap;
+    align-items: center;
     .nav-mobile {
       top: 100%;
       width: 94%;
@@ -255,10 +256,8 @@
       max-height: 0;
       transition: max-height 0.25s ease-in;
       a:first-of-type {
-        padding-top: 2em;
-      }
-      a:last-of-type {
-        padding-bottom: 1em;
+        margin-top: 2em;
+        margin-left: 0.25rem;
       }
     }
 
