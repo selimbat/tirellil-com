@@ -1,5 +1,8 @@
 <template>
-  <ResponsiveContainer @screen-changed="screenChanged">
+  <ResponsiveContainer
+    @screen-changed="screenChanged"
+    @toggle-mobile-view="(v) => (mobileView = v)"
+  >
     <ProjectsFilters @filters-updated="registerFilter" />
     <div class="flex-container bottom-space">
       <div
@@ -14,6 +17,7 @@
         <Thumbnail
           v-if="shouldShowProject(project)"
           :metadata="getThumbnailMetadata(project)"
+          :mobileView="mobileView"
         >
         </Thumbnail>
       </div>
@@ -38,6 +42,7 @@
         projects: [],
         activeFilter: null,
         nbProjectsPerRow: 3,
+        mobileView: false,
       };
     },
     computed: {

@@ -1,6 +1,12 @@
 <template>
   <div class="wrapper">
-    <router-link class="thumbnail" :to="metadata.route">
+    <router-link
+      class="thumbnail"
+      :to="metadata.route"
+      @mouseover.native="hover = true"
+      @mouseleave.native="hover = false"
+      :class="{ showText: hover || mobileView }"
+    >
       <img :src="imgUrl(metadata.imgSrc)" :alt="metadata.imgAlt" />
       <div class="textArea">
         <p>{{ tagsStr }}</p>
@@ -26,6 +32,15 @@
         type: Object,
         required: true,
       },
+      mobileView: {
+        type: Boolean,
+        default: false,
+      },
+    },
+    data() {
+      return {
+        hover: false,
+      };
     },
     computed: {
       tagsStr: function() {
@@ -83,7 +98,7 @@
       color: black;
     }
   }
-  .thumbnail:hover,
+  .thumbnail.showText,
   .thumbnail:focus {
     .textArea {
       opacity: 0.8;
