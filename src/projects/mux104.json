@@ -1,7 +1,7 @@
 {
   "title": "Ray marching voxel engine",
   "filterTags": ["graphics"],
-  "techTags": ["Processing", "GLSL", "Computer Graphics"],
+  "techTags": ["Processing", "Shaders"],
   "index": 9,
   "route": "/projects/mux104",
   "thumbnail": {

@@ -1,7 +1,7 @@
 {
   "title": "Ray tracing from scratch",
   "filterTags": ["graphics"],
-  "techTags": ["Python", "Computer Graphics"],
+  "techTags": ["Python", "Numpy"],
   "index": 5,
   "route": "/projects/bubble-beam",
   "thumbnail": {

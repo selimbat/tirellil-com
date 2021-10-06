@@ -1,7 +1,7 @@
 {
   "title": "3D rendering engine",
   "filterTags": ["graphics"],
-  "techTags": ["C++", "OpenGL"],
+  "techTags": ["C++", "OpenGL", "Shaders"],
   "index": 8,
   "route": "/projects/3d-engine",
   "thumbnail": {
