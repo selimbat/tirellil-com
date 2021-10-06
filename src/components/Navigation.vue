@@ -218,6 +218,7 @@
 
   .infos {
     display: flex;
+    font-size: 1.1em;
   }
 
   .infos > li + li {
