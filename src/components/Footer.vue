@@ -3,7 +3,7 @@
     <div class="socials-wrapper">
       <ul class="socials">
         <li v-for="social in socials" :key="social.name" :class="social.class">
-          <a :href="social.url">
+          <a :href="social.url" rel="external" target="_blank">
             {{ social.name }}
           </a>
         </li>

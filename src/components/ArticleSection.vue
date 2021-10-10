@@ -103,11 +103,12 @@
         }
       },
       beautifyText: function(text) {
+        // TODO: format with regex and put in different file
         const boldSymbol = "**";
         const boldTags = { opening: "<strong>", closing: "</strong>" };
         const linkSymbol = "~~";
         const linkTags = {
-          opening: (url) => `<a target="_blank" href="${url}">`,
+          opening: (url) => `<a rel="external" target="_blank" href="${url}">`,
           closing: "</a>",
         };
 

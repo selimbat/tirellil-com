@@ -25,22 +25,22 @@
           {
             name: "Github",
             class: "github",
-            url: "#",
+            url: "https://github.com/selimbat/",
           },
           {
             name: "LinkedIn",
             class: "linked-in",
-            url: "#",
+            url: "https://www.linkedin.com/in/selim-tirellil/",
           },
           {
             name: "CodePen",
             class: "codepen",
-            url: "#",
+            url: "https://codepen.io/tirellil",
           },
           {
             name: "Shadertoy",
             class: "shadertoy",
-            url: "#",
+            url: "https://www.shadertoy.com/user/Atchafalaya",
           },
         ],
       };

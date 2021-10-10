@@ -17,7 +17,7 @@
       </ul>
       <ul class="socials">
         <li v-for="social in socials" :key="social.name" :class="social.class">
-          <a :href="social.url">
+          <a :href="social.url" target="_blank" rel="external">
             {{ social.name }}
           </a>
         </li>
