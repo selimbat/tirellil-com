@@ -4,13 +4,15 @@
       <h2>{{ isProjectLoaded ? project.title : filename }}</h2>
       <p>{{ tagsStr }}</p>
     </Banner>
-    <Article
-      v-if="isProjectLoaded"
-      :sections="project.sections"
-      :repository="project.repository"
-      :nextArticleRoute="nextProjectRoute"
-      :prevArticleRoute="prevProjectRoute"
-    ></Article>
+    <section>
+      <Article
+        v-if="isProjectLoaded"
+        :sections="project.sections"
+        :repository="project.repository"
+        :nextArticleRoute="nextProjectRoute"
+        :prevArticleRoute="prevProjectRoute"
+      ></Article>
+    </section>
   </div>
 </template>
 
