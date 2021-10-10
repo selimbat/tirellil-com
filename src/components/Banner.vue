@@ -49,7 +49,7 @@
     font-size: 20px;
     * {
       color: lightgrey;
-      mix-blend-mode: screen;
+      text-shadow: #444 1px 1px 1px, #444 -1px -1px 1px;
     }
     h2 {
       font-size: 2em;

@@ -74,12 +74,8 @@
       return {
         pages: [
           {
-            label: "HOME",
-            route: "/",
-          },
-          {
             label: "ABOUT ME",
-            route: "/about",
+            route: "/",
           },
           {
             label: "PROJECTS",
