@@ -48,7 +48,7 @@
   .parallax {
     font-size: 20px;
     * {
-      color: lightgrey;
+      color: rgb(233, 233, 233);
       text-shadow: #444 1px 1px 1px, #444 -1px -1px 1px;
     }
     h2 {
