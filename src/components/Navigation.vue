@@ -8,7 +8,7 @@
       <ul class="infos">
         <li class="email">
           <Icon icon="envelope" />
-          selim@tirellil.com
+          selim.tirellil@hotmail.fr
         </li>
         <li class="location">
           <Icon icon="map-marker-alt" />
