@@ -3,6 +3,7 @@
     <router-link
       :to="nextRoute ? nextRoute : ''"
       class="next"
+      rel="next"
       :class="{ disabled: nextRoute == null }"
     >
       newer
@@ -15,6 +16,7 @@
     <router-link
       :to="prevRoute ? prevRoute : ''"
       class="prev"
+      rel="prev"
       :class="{ disabled: prevRoute == null }"
     >
       older
