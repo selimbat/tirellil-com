@@ -154,9 +154,7 @@
       padding: 0.5rem 1rem;
       border-radius: 0.125rem;
       transition: background-color 0.3s ease-in;
-      &:visited {
-        color: var(--header-text-color);
-      }
+      color: var(--header-text-color);
       &.router-link-exact-active {
         color: #42b983;
       }
