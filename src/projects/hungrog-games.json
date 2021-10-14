@@ -2,7 +2,7 @@
   "title": "Roguelite multiplayer game",
   "filterTags": ["game", "ai"],
   "techTags": ["Unity", "C#"],
-  "index": 3,
+  "index": 2,
   "route": "/projects/hungrog-games",
   "thumbnail": {
     "imgSrc": "hungrog-games.png",
