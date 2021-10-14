@@ -1,0 +1,57 @@
+{
+  "title": "Personal portfolio",
+  "filterTags": [
+    "web"
+  ],
+  "techTags": [
+    "Vue.js"
+  ],
+  "index": 11,
+  "route": "/projects/portfolio",
+  "thumbnail": {
+    "imgSrc": "portfolio.png",
+    "imgAlt": "A screenshot of the home page of this website"
+  },
+  "repository": {
+    "host": "github",
+    "url": "https://github.com/selimbat/tirellil-com"
+  },
+  "originallyPosted": "2021-10-13 16:41",
+  "lastUpdated": "2021-10-13 16:41",
+  "sections": [
+    {
+      "type": "paragraph",
+      "title": "Learning Vue.js",
+      "content": ""
+    },
+    {
+      "type": "paragraph",
+      "title": "Styling challenge",
+      "content": ""
+    },
+    {
+      "type": "multiple",
+      "title": "Extra features just for fun",
+      "sections": [
+        {
+          "type": "paragraph",
+          "title": "Document format and custom syntax",
+          "content": ""
+        },
+        {
+          "type": "img",
+          "content": {
+            "imgSrc": "custom-syntax.png",
+            "imgAlt": "An exemple of the custom syntax for generating bold and hyperlink text.",
+            "annotation": "An exemple of the custom syntax."
+          }
+        },
+        {
+          "type": "paragraph",
+          "title": "Recursive and responsive article layout",
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
