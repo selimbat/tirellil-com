@@ -32,7 +32,7 @@
         {
           "type": "paragraph",
           "title": "Document format and custom syntax",
-          "content": "For writing and editing the articles, I needed to choose a document format. The fun of it, I went with a custom one. I chose to store the articles as json with with the content along with some metadata. The only features I needed in my articles were the possibility to add **bold** and ~~hyperlink~~ text. To take care of that, I chose symbols that represent the start and end of bold or hyperlink text, respectively ** and ~~. I then implemented a simple parsing algorithm that transforms these characters to the right HTML tags."
+          "content": "For writing and editing the articles, I needed to choose a document format. The fun of it, I went with a custom one. I chose to store the articles as json with with the content along with some metadata. The only features I needed in my articles were the possibility to add **bold** and ~~hyperlink[#]~~ text. To take care of that, I chose symbols that represent the start and end of bold or hyperlink text, respectively ** and ~~. I then implemented a simple parsing algorithm that transforms these characters to the right HTML tags."
         },
         {
           "type": "img",

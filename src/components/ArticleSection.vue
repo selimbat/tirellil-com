@@ -211,6 +211,7 @@
 
   .sub-sections-container {
     display: flex;
+    align-items: center;
   }
 
   .sub-sections-container.mobile {
