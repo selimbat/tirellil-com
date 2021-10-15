@@ -5,7 +5,7 @@
   "index": 5,
   "route": "/projects/bubble-beam",
   "thumbnail": {
-    "imgSrc": "bubble-beam.png",
+    "imgSrc": "bubble-beam.jpg",
     "imgAlt": "Three spheres lit by point lights of different colors and intensities"
   },
   "repository": {
@@ -44,7 +44,7 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "three spheres reflection.png",
+            "imgSrc": "three spheres reflection.jpg",
             "imgAlt": "Three spheres of different colors and roughness lit by several lights",
             "annotation": "Multiple point lights, different materials and several levels of reflection."
           }
