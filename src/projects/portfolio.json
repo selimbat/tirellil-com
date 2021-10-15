@@ -1,16 +1,12 @@
 {
   "title": "Personal portfolio",
-  "filterTags": [
-    "web"
-  ],
-  "techTags": [
-    "Vue.js"
-  ],
+  "filterTags": ["web"],
+  "techTags": ["Vue.js"],
   "index": 11,
   "route": "/projects/portfolio",
   "thumbnail": {
-    "imgSrc": "portfolio.png",
-    "imgAlt": "A screenshot of the home page of this website"
+    "imgSrc": "portfolio.jpg",
+    "imgAlt": "The image of the banner of this website, marbles and blue-green lasers."
   },
   "repository": {
     "host": "github",
@@ -22,12 +18,12 @@
     {
       "type": "paragraph",
       "title": "Learning Vue.js",
-      "content": ""
+      "content": "Even though I had already contributed to ~~a school project with Vue[/project/polyphona]~~, I was more focused on the backend. But it was an opportunity to read some frontend code and learn. One year after, in 2019, I still didn't feel confortable enough to tackle a portfolio projet with a frontend framework but wanted to try and use some basic HTML, CSS and Javascript with the help of a premade template. A lot have changed since then and, in 2021, I started learning Vue on my free time and the portfolio was the perfect test project to (re)build and deploy. I wanted something simple and that could be a good case study, so **no out-of-the-box state management, no fancy UI library and minimal dependencies**."
     },
     {
       "type": "paragraph",
       "title": "Styling challenge",
-      "content": ""
+      "content": "My main goal for this project was to build and style it **as closely as possible to the original template** that I used in the first version. All the styling is made **only in CSS**. Having a layout and style model to follow was challenging but clearly very helpful in my CSS journey."
     },
     {
       "type": "multiple",
@@ -36,7 +32,7 @@
         {
           "type": "paragraph",
           "title": "Document format and custom syntax",
-          "content": ""
+          "content": "For writing and editing the articles, I needed to choose a document format. The fun of it, I went with a custom one. I chose to store the articles as json with with the content along with some metadata. The only features I needed in my articles were the possibility to add **bold** and ~~hyperlink~~ text. To take care of that, I chose symbols that represent the start and end of bold or hyperlink text, respectively ** and ~~. I then implemented a simple parsing algorithm that transforms these characters to the right HTML tags."
         },
         {
           "type": "img",
@@ -49,9 +45,14 @@
         {
           "type": "paragraph",
           "title": "Recursive and responsive article layout",
-          "content": ""
+          "content": "The main content of an article is organised as recursive sections, meaning each section can either be a paragraph, an image, a video or a collections of sub-sections. For exemple, this paragraph is a sub-section of the parent section \"Extra features just for fun\". The main advantage of this approach is responsiveness. The sections can be laid out differently depending on the user's device with very few CSS properties. You can try this out by resizing your window."
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "title": "Conclusion",
+      "content": "Altogether, I am pretty happy with how this portfolio turned out. I definetely have a lot of other ideas of improvement but, for now, I think it would be wiser to be contented with it as it is and avoid ~~feature creep[https://en.wikipedia.org/wiki/Feature_creep]~~."
     }
   ]
 }
