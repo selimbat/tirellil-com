@@ -186,15 +186,22 @@
 <style lang="scss" scoped>
   .article-section {
     text-align: left;
-  }
-  .article-section > h5,
-  .article-section > p,
-  .article-section > div {
-    margin: 1.3rem 0;
+    & > h5,
+    & > p,
+    & > div {
+      margin: 1.3rem 0;
+    }
+    & > p {
+      line-height: 150%;
+    }
   }
 
   section:not(:first-of-type) > .article-section > h5 {
     margin-top: 2.5rem;
+  }
+
+  .sub-sections-container > section > .article-section > h5 {
+    margin: 1.3rem 0;
   }
 
   .article-section > h5 {
