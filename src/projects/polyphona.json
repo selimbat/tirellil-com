@@ -1,16 +1,12 @@
 {
   "title": "Accessible musical notebook",
-  "filterTags": [
-    "web"
-  ],
-  "techTags": [
-    "Python", "Vue.js"
-  ],
+  "filterTags": ["web"],
+  "techTags": ["Python", "Vue.js"],
   "index": 3,
   "route": "/projects/polyphona",
   "thumbnail": {
-    "imgSrc": "polyphona.png",
-    "imgAlt": "A logo representing a musical note on light green circular background"
+    "imgSrc": "polyphona.jpg",
+    "imgAlt": "A logo representing a musical note along with 'Polyphona' written in light green on an orange background"
   },
   "repository": {
     "host": "github",
@@ -22,12 +18,28 @@
     {
       "type": "paragraph",
       "title": "Project description",
-      "content": ""
+      "content": "In a group of six, we designed and developed Polyphona, **the musical notepad for everyone**. With a very visual representation of the music and a simple breakdown of the rhythm, Polyphona appeals to both novices and connoisseurs alike to allow them to doodle melodies in a simple and intuitive way."
     },
     {
       "type": "paragraph",
-      "title": "Choosing the tech stack",
-      "content": ""
+      "content": "Users can create an account and login from any machine. They can create songs, play them in loop, edit them live, save them to the cloud and import them for future edits."
+    },
+    {
+      "type": "img",
+      "content": {
+        "imgSrc": "polyphona.jpg",
+        "imgalt": "An example song in the editor and various elements like a play, save and import buttons an input field for the song title and the song octave.",
+        "annotation": "An overview of the song editon"
+      }
+    },
+    {
+      "type": "paragraph",
+      "title": "The tech stack",
+      "content": "The desktop client is made with ~~Electron[http://electronjs.org/]~~, which opens the possibility to develop desktop applications with web technologies. We paired Electron with another JavaScript framework used to develop single-page web applications, ~~Vue.js[https://vuejs.org/]~~. Several possibilities were available for the choice of the framework with which to work, in particular Proton or Electron. Our choice fell on the second because it seemed to us to have a larger active community, more projects completed and more packages created. In particular, it was possible from the start to integrate the Vue framework into the application thanks to ~~electron-vue[https://github.com/SimulatedGREG/electron-vue]~~: this package allowed us to generate a single page application project and benefit from the component-oriented architecture of Vue."
+    },
+    {
+      "type": "paragraph",
+      "content": "The backend server is built using Python and the ~~Falcon microframework[https://falconframework.org]~~. The choice of Python is motivated by our common knowledge of this language and the ~~sqlite3[https://docs.python.org/3/library/sqlite3.html]~~ module of the standard library allowing to interface with an SQLite database without any dependencies. For the framework, we chose a microframework because our use case did not justify the use of a larger one (such as ~~Django[https://www.djangoproject.com]~~). We chose Falcon (rather than ~~Flask[http://flask.pocoo.org]~~) because it specifically targets REST APIs. It is easy to use and provides tools to build best practice \"RESTful\" API servers. As our application server does nothing other than provide a REST API to the database, this choice seemed appropriate to us."
     }
   ]
 }

@@ -18,7 +18,7 @@
     {
       "type": "paragraph",
       "title": "Learning Vue.js",
-      "content": "Even though I had already contributed to ~~a school project with Vue[/project/polyphona]~~, I was more focused on the backend. But it was an opportunity to read some frontend code and learn. One year after, in 2019, I still didn't feel confortable enough to tackle a portfolio projet with a frontend framework but wanted to try and use some basic HTML, CSS and Javascript with the help of a premade template. A lot have changed since then and, in 2021, I started learning Vue on my free time and the portfolio was the perfect test project to (re)build and deploy. I wanted something simple and that could be a good case study, so **no out-of-the-box state management, no fancy UI library and minimal dependencies**."
+      "content": "Even though I had already contributed to ~~a school project with Vue[/#/projects/polyphona]~~, I was more focused on the backend. But it was an opportunity to read some frontend code and learn. One year after, in 2019, I still didn't feel confortable enough to tackle a portfolio projet with a frontend framework but wanted to try and use some basic HTML, CSS and Javascript with the help of a premade template. A lot have changed since then and, in 2021, I started learning Vue on my free time and the portfolio was the perfect test project to (re)build and deploy. I wanted something simple and that could be a good case study, so **no out-of-the-box state management, no fancy UI library and minimal dependencies**."
     },
     {
       "type": "paragraph",
