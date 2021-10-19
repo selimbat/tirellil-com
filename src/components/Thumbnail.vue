@@ -19,11 +19,7 @@
 </template>
 
 <script>
-  var images = require.context(
-    "../assets/project-thumbnails/",
-    false,
-    /\.(png|jpg)$/
-  );
+  import { getThumbnailImage } from "@/services/imageLoader.js";
 
   export default {
     name: "Thumbnail",
@@ -50,8 +46,8 @@
       },
     },
     methods: {
-      imgUrl: function(path) {
-        return images("./" + path);
+      imgUrl: function(filename) {
+        return getThumbnailImage(filename);
       },
     },
   };

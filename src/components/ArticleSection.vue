@@ -39,8 +39,9 @@
 
 <script>
   import { beautifyText } from "@/services/syntaxParser.js";
+  import { getArticleImage } from "@/services/imageLoader.js";
+
   const maxSupportedDepth = 2; // included
-  var images = require.context("../assets/projects/", false, /\.(png|jpg)$/);
 
   export default {
     name: "ArticleSection",
@@ -96,12 +97,8 @@
       },
     },
     methods: {
-      imgUrl: function(path) {
-        if (images.keys().indexOf("./" + path) >= 0) {
-          return images("./" + path);
-        } else {
-          return images("./dodeca1.png"); // TODO: change to a real error image
-        }
+      imgUrl: function(filename) {
+        return getArticleImage(filename);
       },
       beautifyText: function(text) {
         return beautifyText(text);
