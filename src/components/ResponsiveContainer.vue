@@ -92,7 +92,6 @@
     transition: all 0.3s ease-out;
   }
   .container {
-    width: 1140px;
     margin-right: auto;
     margin-left: auto;
     left: 0;
