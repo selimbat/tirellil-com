@@ -53,14 +53,14 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "dodeca1.png",
+            "imgSrc": "small-dodeca.png",
             "imgAlt": "A small structure with rhombic dodecahedra"
           }
         },
         {
           "type": "img",
           "content": {
-            "imgSrc": "dodeca2.png",
+            "imgSrc": "big-dodeca.png",
             "imgAlt": "A huge structure with rhombic dodecahedra"
           }
         }
