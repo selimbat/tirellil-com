@@ -63,15 +63,6 @@
       top: 0.5em;
     }
   }
-  .toggle-nav:hover {
-    span::before,
-    span::after {
-      width: 100%;
-    }
-    span::before {
-      right: 0;
-    }
-  }
   .toggle-nav.open {
     span {
       background-color: transparent;
@@ -89,10 +80,21 @@
       transform: rotate(-45deg);
     }
   }
-  .toggle-nav:hover.open {
-    span::before,
-    span::after {
-      transform: rotate(0deg);
+  @media (hover: hover) {
+    .toggle-nav:hover {
+      span::before,
+      span::after {
+        width: 100%;
+      }
+      span::before {
+        right: 0;
+      }
+      &.open {
+        span::before,
+        span::after {
+          transform: rotate(0deg);
+        }
+      }
     }
   }
 </style>
