@@ -39,6 +39,12 @@
         nextProjectRoute: null,
       };
     },
+    provide() {
+      this.populate(this.filename);
+      return {
+        videoPlaceholder: this.project.thumbnail,
+      };
+    },
     computed: {
       isProjectLoaded() {
         return this.project ? true : false;
@@ -85,9 +91,6 @@
     beforeRouteUpdate(to, from, next) {
       this.populate(to.params.filename);
       next();
-    },
-    created() {
-      this.populate(this.filename);
     },
   };
 </script>
