@@ -5,8 +5,8 @@
   "index": 2,
   "route": "/projects/hungrog-games",
   "thumbnail": {
-    "imgSrc": "hungrog-games.jpg",
-    "imgAlt": "A wizard battles a blob monster in dungeon"
+    "src": "hungrog-games.jpg",
+    "alt": "A wizard battles a blob monster in dungeon"
   },
   "originallyPosted": "2021-04-26 19:48",
   "lastUpdated": "2021-04-26 19:48",

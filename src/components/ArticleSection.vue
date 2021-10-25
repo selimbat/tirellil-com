@@ -4,17 +4,10 @@
       <h5 v-if="hasTitle">{{ section.title }}</h5>
       <p v-if="isParagraph" v-html="beautifyText(section.content)"></p>
       <div class="img-container" v-if="isImage">
-        <img
-          :src="imgUrl(section.content.imgSrc)"
-          :alt="section.content.imgAlt"
-        />
+        <img :src="imgUrl(section.content.src)" :alt="section.content.alt" />
         <p class="img-annotation">{{ section.content.annotation }}</p>
       </div>
-      <VideoWrapper
-        v-if="isVideo"
-        :video="section.content"
-        :placeholder="videoPlaceholder"
-      ></VideoWrapper>
+      <VideoWrapper v-if="isVideo" :video="section.content"></VideoWrapper>
       <div
         class="sub-sections-container"
         :class="{ mobile: mobileView }"

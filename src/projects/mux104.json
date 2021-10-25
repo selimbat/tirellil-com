@@ -5,8 +5,8 @@
   "index": 9,
   "route": "/projects/mux104",
   "thumbnail": {
-    "imgSrc": "mux104.png",
-    "imgAlt": "A structure made with many rhombic dodecahedra of different colors"
+    "src": "mux104.png",
+    "alt": "A structure made with many rhombic dodecahedra of different colors"
   },
   "repository": {
     "host": "github",
@@ -53,15 +53,15 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "small-dodeca.png",
-            "imgAlt": "A small structure with rhombic dodecahedra"
+            "src": "small-dodeca.png",
+            "alt": "A small structure with rhombic dodecahedra"
           }
         },
         {
           "type": "img",
           "content": {
-            "imgSrc": "big-dodeca.png",
-            "imgAlt": "A huge structure with rhombic dodecahedra"
+            "src": "big-dodeca.png",
+            "alt": "A huge structure with rhombic dodecahedra"
           }
         }
       ]

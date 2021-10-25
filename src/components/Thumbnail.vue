@@ -7,7 +7,7 @@
       @mouseleave.native="hover = false"
       :class="{ showText: hover || mobileView }"
     >
-      <img :src="imgUrl(metadata.imgSrc)" :alt="metadata.imgAlt" />
+      <img :src="imgUrl(metadata.img.src)" :alt="metadata.img.alt" />
       <div class="textArea">
         <p>{{ tagsStr }}</p>
         <h5>

@@ -5,8 +5,8 @@
   "index": 8,
   "route": "/projects/3d-engine",
   "thumbnail": {
-    "imgSrc": "3d-engine.jpg",
-    "imgAlt": "A Utah teapot"
+    "src": "3d-engine.jpg",
+    "alt": "A Utah teapot"
   },
   "repository": {
     "host": "github",
@@ -27,16 +27,16 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "first-teapot.jpg",
-            "imgAlt": "A white Utah teapot on a white floor with a black grid.",
+            "src": "first-teapot.jpg",
+            "alt": "A white Utah teapot on a white floor with a black grid.",
             "annotation": "First model loaded and rendered: the Utah teapot"
           }
         },
         {
           "type": "img",
           "content": {
-            "imgSrc": "shadows.jpg",
-            "imgAlt": "A white Utah teapot alongside a Stanford bunny lit by red, blue and green point lights from angles",
+            "src": "shadows.jpg",
+            "alt": "A white Utah teapot alongside a Stanford bunny lit by red, blue and green point lights from angles",
             "annotation": "Teapot and bunny lit by point lights of different colors from different angles."
           }
         }

@@ -64,8 +64,10 @@
           title: project.title,
           route: project.route,
           techTags: project.techTags,
-          imgSrc: project.thumbnail.imgSrc,
-          imgAlt: project.thumbnail.imgAlt,
+          img: {
+            src: project.thumbnail.src,
+            alt: project.thumbnail.alt,
+          },
         };
       },
       registerFilter(filters) {

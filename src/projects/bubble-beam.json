@@ -5,8 +5,8 @@
   "index": 5,
   "route": "/projects/bubble-beam",
   "thumbnail": {
-    "imgSrc": "bubble-beam.jpg",
-    "imgAlt": "Three spheres lit by point lights of different colors and intensities"
+    "src": "bubble-beam.jpg",
+    "alt": "Three spheres lit by point lights of different colors and intensities"
   },
   "repository": {
     "host": "github",
@@ -36,16 +36,16 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "first reflection.png",
-            "imgAlt": "A big blue sphere and a smaller red one that reflects on the surface of the former.",
+            "src": "first reflection.png",
+            "alt": "A big blue sphere and a smaller red one that reflects on the surface of the former.",
             "annotation": "First scene with reflections and shadows"
           }
         },
         {
           "type": "img",
           "content": {
-            "imgSrc": "three spheres reflection.jpg",
-            "imgAlt": "Three spheres of different colors and roughness lit by several lights",
+            "src": "three spheres reflection.jpg",
+            "alt": "Three spheres of different colors and roughness lit by several lights",
             "annotation": "Multiple point lights, different materials and several levels of reflection."
           }
         }

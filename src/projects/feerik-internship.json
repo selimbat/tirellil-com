@@ -5,8 +5,8 @@
   "index": 6,
   "route": "/projects/feerik-internship",
   "thumbnail": {
-    "imgSrc": "feerik.jpg",
-    "imgAlt": "The logo of Féérik Games"
+    "src": "feerik.jpg",
+    "alt": "The logo of Féérik Games"
   },
   "originallyPosted": "2021-04-26 19:48",
   "lastUpdated": "2021-04-26 19:48",

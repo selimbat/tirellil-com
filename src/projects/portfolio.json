@@ -5,8 +5,8 @@
   "index": 11,
   "route": "/projects/portfolio",
   "thumbnail": {
-    "imgSrc": "portfolio.jpg",
-    "imgAlt": "The image of the banner of this website, marbles and blue-green lasers."
+    "src": "portfolio.jpg",
+    "alt": "The image of the banner of this website, marbles and blue-green lasers."
   },
   "repository": {
     "host": "github",
@@ -37,8 +37,8 @@
         {
           "type": "img",
           "content": {
-            "imgSrc": "custom-syntax.png",
-            "imgAlt": "An exemple of the custom syntax for generating bold and hyperlink text.",
+            "src": "custom-syntax.png",
+            "alt": "An exemple of the custom syntax for generating bold and hyperlink text.",
             "annotation": "An exemple of the custom syntax."
           }
         },

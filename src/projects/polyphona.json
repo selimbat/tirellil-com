@@ -5,8 +5,8 @@
   "index": 3,
   "route": "/projects/polyphona",
   "thumbnail": {
-    "imgSrc": "polyphona.jpg",
-    "imgAlt": "A logo representing a musical note along with 'Polyphona' written in light green on an orange background"
+    "src": "polyphona.jpg",
+    "alt": "A logo representing a musical note along with 'Polyphona' written in light green on an orange background"
   },
   "repository": {
     "host": "github",
@@ -27,8 +27,8 @@
     {
       "type": "img",
       "content": {
-        "imgSrc": "polyphona.jpg",
-        "imgalt": "An example song in the editor and various elements like a play, save and import buttons an input field for the song title and the song octave.",
+        "src": "polyphona.jpg",
+        "alt": "An example song in the editor and various elements like a play, save and import buttons an input field for the song title and the song octave.",
         "annotation": "An overview of the song editon"
       }
     },

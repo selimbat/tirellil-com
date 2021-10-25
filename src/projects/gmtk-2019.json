@@ -5,8 +5,8 @@
   "index": 7,
   "route": "/projects/gmtk-2019",
   "thumbnail": {
-    "imgSrc": "gmtk-2019.jpg",
-    "imgAlt": "Four robots in a console factory in front of a furnace"
+    "src": "gmtk-2019.jpg",
+    "alt": "Four robots in a console factory in front of a furnace"
   },
   "repository": {
     "host": "github",

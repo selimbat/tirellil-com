@@ -5,8 +5,8 @@
   "index": 4,
   "route": "/projects/wolpAIre",
   "thumbnail": {
-    "imgSrc": "wolpAIre.jpg",
-    "imgAlt": "A vampire and a werewolf roar at each other"
+    "src": "wolpAIre.jpg",
+    "alt": "A vampire and a werewolf roar at each other"
   },
   "repository": {
     "host": "github",
