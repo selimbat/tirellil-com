@@ -10,10 +10,7 @@
             Consent to Youtube cookies
           </button>
         </div>
-        <img
-          :src="getPlaceholderImg(placeholder.imgSrc)"
-          :alt="placeholder.imgAlt"
-        />
+        <img :src="getPlaceholderImg(placeholder.src)" :alt="placeholder.alt" />
       </div>
     </div>
   </div>
