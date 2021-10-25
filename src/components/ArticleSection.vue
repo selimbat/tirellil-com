@@ -139,6 +139,7 @@
 
   .img-container {
     text-align: center;
+    position: relative;
   }
 
   .img-container > img {
@@ -146,6 +147,8 @@
   }
 
   .img-annotation {
+    position: absolute;
+    width: 100%;
     font-style: italic;
   }
 
