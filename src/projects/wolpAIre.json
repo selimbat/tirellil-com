@@ -72,7 +72,7 @@
         },
         {
           "type": "video",
-          "video": {
+          "content": {
             "src": "https://www.youtube.com/embed/gBLgrns4PuM",
             "alt": "A match opposing our AI to another team during the tournament"
           }

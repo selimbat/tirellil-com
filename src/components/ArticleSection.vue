@@ -10,24 +10,11 @@
         />
         <p class="img-annotation">{{ section.content.annotation }}</p>
       </div>
-      <div class="video-wrapper" v-if="isVideo">
-        <div class="video-container">
-          <div class="video" v-if="isYTConsentPresent()">
-            <iframe :src="section.video.src" allowfullscreen=""></iframe>
-          </div>
-          <div class="video" v-else>
-            <div class="overlay">
-              <button @click="setYoutubeConsent()">
-                Consent to Youtube cookies
-              </button>
-            </div>
-            <img
-              :src="videoPlaceholderImg(videoPlaceholder.imgSrc)"
-              :alt="videoPlaceholder.imgAlt"
-            />
-          </div>
-        </div>
-      </div>
+      <VideoWrapper
+        v-if="isVideo"
+        :video="section.content"
+        :placeholder="videoPlaceholder"
+      ></VideoWrapper>
       <div
         class="sub-sections-container"
         :class="{ mobile: mobileView }"
@@ -49,21 +36,17 @@
 </template>
 
 <script>
+  import VideoWrapper from "@/components/VideoWrapper.vue";
   import { beautifyText } from "@/services/syntaxParser.js";
-  import {
-    isYTConsentPresent,
-    setYoutubeConsent,
-  } from "@/services/cookieService.js";
-  import {
-    getArticleImage,
-    getThumbnailImage,
-  } from "@/services/imageLoader.js";
+  import { getArticleImage } from "@/services/imageLoader.js";
 
   const maxSupportedDepth = 2; // included
 
   export default {
     name: "ArticleSection",
-    inject: ["videoPlaceholder"],
+    components: {
+      VideoWrapper,
+    },
     props: {
       section: {
         type: Object,
@@ -114,18 +97,8 @@
       imgUrl: function(filename) {
         return getArticleImage(filename);
       },
-      videoPlaceholderImg: function(filename) {
-        return getThumbnailImage(filename);
-      },
       beautifyText: function(text) {
         return beautifyText(text);
-      },
-      isYTConsentPresent: function() {
-        return isYTConsentPresent();
-      },
-      setYoutubeConsent: function() {
-        setYoutubeConsent();
-        this.$forceUpdate();
       },
     },
   };
@@ -181,66 +154,6 @@
 
   .img-annotation {
     font-style: italic;
-  }
-
-  .video-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .video-container {
-    flex-basis: 700px;
-  }
-
-  .video {
-    position: relative;
-    padding-top: calc(100% / (16 / 9));
-    overflow: hidden;
-
-    & > iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
-
-    & > img,
-    .overlay {
-      position: absolute;
-      width: 100%;
-    }
-    & > img {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    & > .overlay {
-      top: 0;
-      left: 0;
-      height: 100%;
-      z-index: 10;
-      background: linear-gradient(
-        0deg,
-        rgba(51, 55, 50, 0.8) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      & > button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 1em;
-        background-color: var(--accent-color);
-        border-radius: 0.5em;
-        border: 1px solid var(--accent-color-light);
-        transition: all 0.3s;
-        &:hover {
-          background-color: var(--accent-color-light);
-          border: 1px solid var(--accent-color);
-        }
-      }
-    }
   }
 
   .error {

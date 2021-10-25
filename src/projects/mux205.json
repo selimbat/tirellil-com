@@ -31,7 +31,7 @@
     },
     {
       "type": "video",
-      "video": {
+      "content": {
         "src": "https://www.youtube.com/embed/6AYr8-CUHJU",
         "alt": "A demo of the game"
       }
